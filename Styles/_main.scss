@@ -1,0 +1,45 @@
+main {
+    display: inline-block;
+    background-color: #a72828;
+    width: 100%;
+ 
+    .main-ilustration {
+        margin: 0;
+
+        .ilustration{
+            width: 100%;
+        }
+    }
+
+    .society-information, .society-explaniated{
+        margin: 4rem 2rem 3rem;
+        align-items: center;
+
+        img{
+            display: block;
+            float: right;
+        }
+    }
+
+    .society-explaniated{
+        img{
+            display: block;
+            float: left;
+        }
+
+        p, h2{
+            text-align: end;
+        }
+    }
+
+}
+
+
+// Idea
+
+// #element {
+//     opacity: 0;
+//     justify-content: center;
+//     margin: 10rem;
+    
+// }

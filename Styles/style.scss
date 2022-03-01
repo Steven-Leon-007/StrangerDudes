@@ -1,0 +1,33 @@
+
+@import "reset";
+
+h1{
+    font-family: 'Overlock', cursive;
+    font-size: 6rem;
+    color: #fff;
+
+}
+
+h2{
+    font-family: 'Overlock', cursive;
+    font-size: 4rem;
+    color: #fff;    
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@import "header";
+@import "main";
