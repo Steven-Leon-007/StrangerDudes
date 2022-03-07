@@ -1,39 +1,159 @@
 main {
     display: inline-block;
-    background-color: #a72828;
+    background-color: #07060e;
     width: 100%;
- 
+
     .main-ilustration {
         margin: 0;
+        background-color: #07060e;
 
-        .ilustration{
+        .ilustration {
             width: 100%;
         }
     }
 
-    .society-information, .society-explaniated{
+    .society-information,
+    .society-explaniated,
+    .being-stranger {
         margin: 4rem 2rem 3rem;
         align-items: center;
 
-        img{
+        img :not(.being-stranger) {
+            display: block;
+            float: right;
+        }
+
+        .ufo-crashed {
             display: block;
             float: right;
         }
     }
 
-    .society-explaniated{
-        img{
+
+    .society-information {
+        margin: 3rem 2rem;
+    }
+
+    
+
+    .society-explaniated {
+        img {
             display: block;
             float: left;
         }
 
-        p, h2{
-            text-align: end;
+        p,
+        h2 {
+            text-align: right;
         }
     }
 
+    .benefits-pictures {
+        .img-container {
+            width: 100%;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                margin: 0.5rem auto;
+                border-radius: 0.7rem;
+            }
+        }
+    }
+
+    .road-map-container,
+    .designer-information {
+        width: 90%;
+        margin: 3rem auto;
+        align-items: center;
+
+        img {
+            margin: 1rem auto;
+            display: block;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        li {
+            list-style: disc;
+        }
+    }
+
+    .tittle-road {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .designer-information {
+        margin: 4rem 2rem;
+        img {
+            width: 350px;
+        }
+
+        p{
+            font-size: 2rem;
+        }
+
+        .designer-sign{
+            text-align: right;
+            margin: 3rem 3rem 0;
+        }
+    }
 }
 
+@media screen and (max-width: 990px) {
+    .society-information,
+    .society-explaniated {
+        flex-direction: column !important;
+
+        p,
+        h2 {
+            text-align: center !important;
+        }
+        img {
+            float: none !important;
+            margin: 3rem auto 0.5rem;
+            width: 100%;
+        }
+    }
+
+    .society-explaniated {
+        flex-direction: column-reverse !important;
+    }
+
+    .being-stranger {
+        flex-direction: column !important;
+
+        p,
+        h2 {
+            text-align: center !important;
+        }
+    }
+
+    .road-map-container{
+        width: 100% !important;
+        p{
+            font-size: 1rem !important;
+            text-align: center !important;
+            margin: 1rem auto !important;
+        }
+
+        img{
+            width: 100% !important;
+        }
+    }
+
+    .designer-information{
+        flex-direction: column !important;
+
+        p:not(.designer-sign){
+            font-size: 1.5rem !important;
+            text-align: center !important;
+            margin: 1rem auto 0 !important;
+        }
+    }
+}
 
 // Idea
 
@@ -41,5 +161,5 @@ main {
 //     opacity: 0;
 //     justify-content: center;
 //     margin: 10rem;
-    
+
 // }

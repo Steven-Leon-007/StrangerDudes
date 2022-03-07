@@ -25,9 +25,16 @@ li{
     list-style: none;
 }
 
+div{
+    font-size: 1rem;
+    color: #fff;
+}
+
 a{
     text-decoration: none;
+    color: #fff;
 }
 
 @import "header";
 @import "main";
+@import "footer";

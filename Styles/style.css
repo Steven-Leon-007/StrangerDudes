@@ -363,12 +363,19 @@ li {
   list-style: none;
 }
 
+div {
+  font-size: 1rem;
+  color: #fff;
+}
+
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 header {
-  background: #100416;
+  background-image: url(../Pictures/Banner-Header.svg);
+  background-repeat: repeat;
 }
 
 header .container-fluid {
@@ -380,33 +387,49 @@ header img {
 }
 
 header .img-logo {
-  width: 2.5rem;
+  width: 3rem;
 }
 
 main {
   display: inline-block;
-  background-color: #a72828;
+  background-color: #07060e;
   width: 100%;
 }
 
 main .main-ilustration {
   margin: 0;
+  background-color: #07060e;
 }
 
 main .main-ilustration .ilustration {
   width: 100%;
 }
 
-main .society-information, main .society-explaniated {
+main .society-information,
+main .society-explaniated,
+main .being-stranger {
   margin: 4rem 2rem 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-main .society-information img, main .society-explaniated img {
+main .society-information img :not(.being-stranger),
+main .society-explaniated img :not(.being-stranger),
+main .being-stranger img :not(.being-stranger) {
   display: block;
   float: right;
+}
+
+main .society-information .ufo-crashed,
+main .society-explaniated .ufo-crashed,
+main .being-stranger .ufo-crashed {
+  display: block;
+  float: right;
+}
+
+main .society-information {
+  margin: 3rem 2rem;
 }
 
 main .society-explaniated img {
@@ -414,7 +437,175 @@ main .society-explaniated img {
   float: left;
 }
 
-main .society-explaniated p, main .society-explaniated h2 {
-  text-align: end;
+main .society-explaniated p,
+main .society-explaniated h2 {
+  text-align: right;
+}
+
+main .benefits-pictures .img-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main .benefits-pictures .img-container img {
+  width: 100%;
+  margin: 0.5rem auto;
+  border-radius: 0.7rem;
+}
+
+main .road-map-container,
+main .designer-information {
+  width: 90%;
+  margin: 3rem auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .road-map-container img,
+main .designer-information img {
+  margin: 1rem auto;
+  display: block;
+}
+
+main .road-map-container p,
+main .designer-information p {
+  text-align: justify;
+}
+
+main .road-map-container li,
+main .designer-information li {
+  list-style: disc;
+}
+
+main .tittle-road {
+  text-align: center;
+  padding: 2rem;
+}
+
+main .designer-information {
+  margin: 4rem 2rem;
+}
+
+main .designer-information img {
+  width: 350px;
+}
+
+main .designer-information p {
+  font-size: 2rem;
+}
+
+main .designer-information .designer-sign {
+  text-align: right;
+  margin: 3rem 3rem 0;
+}
+
+@media screen and (max-width: 990px) {
+  .society-information,
+  .society-explaniated {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .society-information p,
+  .society-information h2,
+  .society-explaniated p,
+  .society-explaniated h2 {
+    text-align: center !important;
+  }
+  .society-information img,
+  .society-explaniated img {
+    float: none !important;
+    margin: 3rem auto 0.5rem;
+    width: 100%;
+  }
+  .society-explaniated {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .being-stranger {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .being-stranger p,
+  .being-stranger h2 {
+    text-align: center !important;
+  }
+  .road-map-container {
+    width: 100% !important;
+  }
+  .road-map-container p {
+    font-size: 1rem !important;
+    text-align: center !important;
+    margin: 1rem auto !important;
+  }
+  .road-map-container img {
+    width: 100% !important;
+  }
+  .designer-information {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .designer-information p:not(.designer-sign) {
+    font-size: 1.5rem !important;
+    text-align: center !important;
+    margin: 1rem auto 0 !important;
+  }
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left top, right top, from(#07060e), color-stop(#101016), color-stop(#16171c), color-stop(#1b1d23), color-stop(#20232a), color-stop(#20232a), color-stop(#20232a), color-stop(#20232a), color-stop(#1b1d23), color-stop(#16171c), color-stop(#101016), to(#07060e));
+  background-image: linear-gradient(to right, #07060e, #101016, #16171c, #1b1d23, #20232a, #20232a, #20232a, #20232a, #1b1d23, #16171c, #101016, #07060e);
+}
+
+footer .footer-content {
+  padding: 1.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer img {
+  width: 2rem;
+}
+
+footer .img-logo {
+  width: 3rem;
+}
+
+footer .footer-links {
+  margin: 2rem auto 0.5rem;
+  width: 30%;
+  gap: 0px;
+}
+
+footer .copy-terms .copyright-text,
+footer .copy-terms a {
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+
+footer .copy-terms a {
+  float: right;
+}
+
+@media screen and (max-width: 880px) {
+  .footer-links {
+    width: 90% !important;
+  }
+  .copy-terms p,
+  .copy-terms a {
+    margin: 1rem 0.5rem !important;
+    font-size: 0.8rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

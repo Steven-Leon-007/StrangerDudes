@@ -1,6 +1,6 @@
 header {
-    background: #100416;
-
+    background-image: url(../Pictures/Banner-Header.svg);
+    background-repeat: repeat;
     .container-fluid {
         padding: 1rem 2rem;
     }
@@ -10,7 +10,6 @@ header {
     }
 
     .img-logo {
-        width: 2.5rem;
+        width: 3rem;
     }
 }
-
