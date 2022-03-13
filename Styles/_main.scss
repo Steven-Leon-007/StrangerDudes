@@ -27,14 +27,16 @@ main {
             display: block;
             float: right;
         }
-    }
 
+        .text-explaniation{
+            text-align: justify;
+            margin-top: 1rem;
+        }
+    }
 
     .society-information {
         margin: 3rem 2rem;
     }
-
-    
 
     .society-explaniated {
         img {
@@ -42,22 +44,55 @@ main {
             float: left;
         }
 
-        p,
-        h2 {
-            text-align: right;
+        p {
+            text-align: justify;
+        }
+
+        .sell-button {
+            width: 100%;
+            padding: 4rem;
+            margin: 1rem auto;
+            background-image: linear-gradient(
+                to right top,
+                #262b34,
+                #21252d,
+                #1c1e26,
+                #17181f,
+                #121218,
+                #121218,
+                #121218,
+                #121218,
+                #17181f,
+                #1c1e26,
+                #21252d,
+                #262b34
+            );
+            color: #fff;
+            border: 1px solid #262b34;
+            text-align: center;
+            font-size: 1.7rem;
         }
     }
 
     .benefits-pictures {
         .img-container {
-            width: 100%;
-            margin: 0 auto;
+            width: 80%;
+            margin: 0 2rem;
+            float: right;
             img {
                 width: 100%;
                 margin: 0.5rem auto;
                 border-radius: 0.7rem;
             }
         }
+    }
+
+    .changing-pictures {
+        width: 100%;
+    }
+
+    .row-cols-2 > * {
+        padding-left: 0.25rem;
     }
 
     .road-map-container,
@@ -91,15 +126,17 @@ main {
             width: 350px;
         }
 
-        p{
+        p {
             font-size: 2rem;
         }
 
-        .designer-sign{
+        .designer-sign {
             text-align: right;
             margin: 3rem 3rem 0;
+            font-family: cursive;
         }
     }
+
 }
 
 @media screen and (max-width: 990px) {
@@ -118,8 +155,23 @@ main {
         }
     }
 
+    .tittle-road {
+        padding: 1rem 2rem !important;
+    }
+
     .society-explaniated {
         flex-direction: column-reverse !important;
+    }
+
+    .benefits-pictures {
+        margin: 0 auto !important;
+        float: none !important;
+    }
+
+    .img-container {
+        width: 90% !important;
+        margin: 0 auto !important;
+        float: none !important;
     }
 
     .being-stranger {
@@ -131,23 +183,23 @@ main {
         }
     }
 
-    .road-map-container{
+    .road-map-container {
         width: 100% !important;
-        p{
+        p {
             font-size: 1rem !important;
             text-align: center !important;
             margin: 1rem auto !important;
         }
 
-        img{
+        img {
             width: 100% !important;
         }
     }
 
-    .designer-information{
+    .designer-information {
         flex-direction: column !important;
 
-        p:not(.designer-sign){
+        p:not(.designer-sign) {
             font-size: 1.5rem !important;
             text-align: center !important;
             margin: 1rem auto 0 !important;

@@ -373,6 +373,10 @@ a {
   color: #fff;
 }
 
+:root {
+  color-scheme: dark;
+}
+
 header {
   background-image: url(../Pictures/Banner-Header.svg);
   background-repeat: repeat;
@@ -428,6 +432,13 @@ main .being-stranger .ufo-crashed {
   float: right;
 }
 
+main .society-information .text-explaniation,
+main .society-explaniated .text-explaniation,
+main .being-stranger .text-explaniation {
+  text-align: justify;
+  margin-top: 1rem;
+}
+
 main .society-information {
   margin: 3rem 2rem;
 }
@@ -437,20 +448,40 @@ main .society-explaniated img {
   float: left;
 }
 
-main .society-explaniated p,
-main .society-explaniated h2 {
-  text-align: right;
+main .society-explaniated p {
+  text-align: justify;
+}
+
+main .society-explaniated .sell-button {
+  width: 100%;
+  padding: 4rem;
+  margin: 1rem auto;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#262b34), color-stop(#21252d), color-stop(#1c1e26), color-stop(#17181f), color-stop(#121218), color-stop(#121218), color-stop(#121218), color-stop(#121218), color-stop(#17181f), color-stop(#1c1e26), color-stop(#21252d), to(#262b34));
+  background-image: linear-gradient(to right top, #262b34, #21252d, #1c1e26, #17181f, #121218, #121218, #121218, #121218, #17181f, #1c1e26, #21252d, #262b34);
+  color: #fff;
+  border: 1px solid #262b34;
+  text-align: center;
+  font-size: 1.7rem;
 }
 
 main .benefits-pictures .img-container {
-  width: 100%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0 2rem;
+  float: right;
 }
 
 main .benefits-pictures .img-container img {
   width: 100%;
   margin: 0.5rem auto;
   border-radius: 0.7rem;
+}
+
+main .changing-pictures {
+  width: 100%;
+}
+
+main .row-cols-2 > * {
+  padding-left: 0.25rem;
 }
 
 main .road-map-container,
@@ -498,6 +529,7 @@ main .designer-information p {
 main .designer-information .designer-sign {
   text-align: right;
   margin: 3rem 3rem 0;
+  font-family: cursive;
 }
 
 @media screen and (max-width: 990px) {
@@ -520,11 +552,23 @@ main .designer-information .designer-sign {
     margin: 3rem auto 0.5rem;
     width: 100%;
   }
+  .tittle-road {
+    padding: 1rem 2rem !important;
+  }
   .society-explaniated {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
+  }
+  .benefits-pictures {
+    margin: 0 auto !important;
+    float: none !important;
+  }
+  .img-container {
+    width: 90% !important;
+    margin: 0 auto !important;
+    float: none !important;
   }
   .being-stranger {
     -webkit-box-orient: vertical !important;

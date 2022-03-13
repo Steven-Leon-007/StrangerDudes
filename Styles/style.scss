@@ -35,6 +35,11 @@ a{
     color: #fff;
 }
 
+:root{
+    color-scheme: dark;
+}
+
+
 @import "header";
 @import "main";
 @import "footer";
