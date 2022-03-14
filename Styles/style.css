@@ -394,6 +394,21 @@ header .img-logo {
   width: 3rem;
 }
 
+@media screen and (max-width: 450px) {
+  header {
+    background-repeat: repeat !important;
+  }
+  header nav .container-fluid {
+    padding: .5rem 1rem !important;
+  }
+  header nav img:not(.img-logo) {
+    width: 1.5rem !important;
+  }
+  header nav .img-logo {
+    width: 2rem !important;
+  }
+}
+
 main {
   display: inline-block;
   background-color: #07060e;
@@ -412,7 +427,7 @@ main .main-ilustration .ilustration {
 main .society-information,
 main .society-explaniated,
 main .being-stranger {
-  margin: 4rem 2rem 3rem;
+  margin: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -439,8 +454,20 @@ main .being-stranger .text-explaniation {
   margin-top: 1rem;
 }
 
+main .justify-content-center {
+  margin: 2rem auto;
+}
+
 main .society-information {
-  margin: 3rem 2rem;
+  margin: 0 2rem 1rem;
+}
+
+main .society-explaniated {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 2rem;
 }
 
 main .society-explaniated img {
@@ -449,7 +476,7 @@ main .society-explaniated img {
 }
 
 main .society-explaniated p {
-  text-align: justify;
+  text-align: right;
 }
 
 main .society-explaniated .sell-button {
@@ -535,22 +562,28 @@ main .designer-information .designer-sign {
 @media screen and (max-width: 990px) {
   .society-information,
   .society-explaniated {
+    margin: 0 1rem 1rem !important;
     -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
   }
-  .society-information p,
   .society-information h2,
-  .society-explaniated p,
   .society-explaniated h2 {
     text-align: center !important;
+  }
+  .society-information p,
+  .society-explaniated p {
+    text-align: justify !important;
   }
   .society-information img,
   .society-explaniated img {
     float: none !important;
     margin: 3rem auto 0.5rem;
     width: 100%;
+  }
+  .justify-content-center {
+    margin: 1rem auto 0 !important;
   }
   .tittle-road {
     padding: 1rem 2rem !important;
@@ -560,21 +593,34 @@ main .designer-information .designer-sign {
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
+    margin: -2rem 1rem 1rem !important;
+  }
+  .society-explaniated p {
+    margin-top: 1rem;
+  }
+  .society-explaniated .sell-button {
+    padding: 2rem !important;
   }
   .benefits-pictures {
     margin: 0 auto !important;
     float: none !important;
   }
   .img-container {
-    width: 90% !important;
-    margin: 0 auto !important;
+    width: 100% !important;
+    margin: 0 auto 0 0.25rem !important;
     float: none !important;
+  }
+  .img-container img {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   .being-stranger {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+    margin: 2rem 1rem !important;
   }
   .being-stranger p,
   .being-stranger h2 {
@@ -596,11 +642,21 @@ main .designer-information .designer-sign {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+    margin: 2rem auto !important;
   }
   .designer-information p:not(.designer-sign) {
     font-size: 1.5rem !important;
     text-align: center !important;
     margin: 1rem auto 0 !important;
+  }
+  .designer-information img {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 3rem !important;
   }
 }
 
@@ -638,18 +694,22 @@ footer .copy-terms a {
   margin: 1rem;
 }
 
-footer .copy-terms a {
-  float: right;
-}
-
 @media screen and (max-width: 880px) {
   .footer-links {
     width: 90% !important;
   }
+  .copy-terms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .copy-terms p,
   .copy-terms a {
     margin: 1rem 0.5rem !important;
-    font-size: 0.8rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

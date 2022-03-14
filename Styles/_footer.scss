@@ -35,6 +35,7 @@ footer {
     }
 
     .copy-terms {
+
         .copyright-text,
         a {
             display: inline-block;
@@ -42,9 +43,6 @@ footer {
             margin: 1rem;
         }
 
-        a {
-            float: right;
-        }
     }
 }
 
@@ -53,10 +51,14 @@ footer {
         width: 90% !important;
     }
     .copy-terms {
+        flex-direction: column;
+        align-items: center;
         p,
         a {
             margin: 1rem 0.5rem !important;
-            font-size: 0.8rem !important;
         }
     }
 }
+
+
+

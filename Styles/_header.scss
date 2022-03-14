@@ -13,3 +13,27 @@ header {
         width: 3rem;
     }
 }
+
+
+@media screen and (max-width: 450px) {
+
+    header{
+        background-repeat: repeat !important;
+    nav{
+
+        .container-fluid{
+            padding: .5rem 1rem !important;
+        }
+
+        img:not(.img-logo){
+            width: 1.5rem !important;
+        }
+
+        .img-logo{
+            width: 2rem !important;
+        }
+    }
+}
+
+}
+

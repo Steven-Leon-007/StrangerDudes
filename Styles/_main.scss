@@ -15,7 +15,7 @@ main {
     .society-information,
     .society-explaniated,
     .being-stranger {
-        margin: 4rem 2rem 3rem;
+        margin: 2rem;
         align-items: center;
 
         img :not(.being-stranger) {
@@ -28,24 +28,31 @@ main {
             float: right;
         }
 
-        .text-explaniation{
+        .text-explaniation {
             text-align: justify;
             margin-top: 1rem;
         }
     }
 
+    .justify-content-center {
+        margin: 2rem auto;
+    }
+
     .society-information {
-        margin: 3rem 2rem;
+        margin: 0 2rem 1rem;
     }
 
     .society-explaniated {
+        flex-direction: row-reverse;
+        margin: 2rem;
+
         img {
             display: block;
             float: left;
         }
 
         p {
-            text-align: justify;
+            text-align: right;
         }
 
         .sell-button {
@@ -136,17 +143,20 @@ main {
             font-family: cursive;
         }
     }
-
 }
 
 @media screen and (max-width: 990px) {
     .society-information,
     .society-explaniated {
-        flex-direction: column !important;
+        margin: 0 1rem 1rem !important;
+        flex-direction: column-reverse !important;
 
-        p,
         h2 {
             text-align: center !important;
+        }
+
+        p {
+            text-align: justify !important;
         }
         img {
             float: none !important;
@@ -155,12 +165,25 @@ main {
         }
     }
 
+    .justify-content-center {
+        margin: 1rem auto 0 !important;
+    }
+
     .tittle-road {
         padding: 1rem 2rem !important;
     }
 
     .society-explaniated {
         flex-direction: column-reverse !important;
+        margin: -2rem 1rem 1rem !important;
+
+        p {
+            margin-top: 1rem;
+        }
+
+        .sell-button {
+            padding: 2rem !important;
+        }
     }
 
     .benefits-pictures {
@@ -169,13 +192,18 @@ main {
     }
 
     .img-container {
-        width: 90% !important;
-        margin: 0 auto !important;
+        width: 100% !important;
+        margin: 0 auto 0 0.25rem !important;
         float: none !important;
+
+        img{
+            justify-content: center !important;
+        }
     }
 
     .being-stranger {
         flex-direction: column !important;
+        margin: 2rem 1rem !important;
 
         p,
         h2 {
@@ -198,12 +226,23 @@ main {
 
     .designer-information {
         flex-direction: column !important;
+        margin: 2rem auto !important;
 
         p:not(.designer-sign) {
             font-size: 1.5rem !important;
             text-align: center !important;
             margin: 1rem auto 0 !important;
         }
+
+        img {
+            width: 90% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h2 {
+        font-size: 3rem !important;
     }
 }
 
