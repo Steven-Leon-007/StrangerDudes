@@ -5,15 +5,36 @@ header {
         padding: 1rem 2rem;
     }
 
-    img {
+    .twitter-svg{
+        fill: #fff;
         width: 2rem;
     }
 
     .img-logo {
         width: 3rem;
     }
+
 }
 
+.link-twitter:hover > .twitter-svg{
+    fill: #1DA1F2;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-instagram:hover > .instagram-svg path{
+    fill: #E1306C;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-discord:hover > .discord-svg path{
+    fill: #5865F2;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-opensea:hover > .opensea-svg path{
+    fill: #1868B7;
+    transition: all 0.2s ease-in-out;
+}
 
 @media screen and (max-width: 450px) {
 
@@ -25,7 +46,7 @@ header {
             padding: .5rem 1rem !important;
         }
 
-        img:not(.img-logo){
+        svg:not(.img-logo){
             width: 1.5rem !important;
         }
 

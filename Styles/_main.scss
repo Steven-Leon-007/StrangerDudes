@@ -21,6 +21,7 @@ main {
         img :not(.being-stranger) {
             display: block;
             float: right;
+            width: 100%;
         }
 
         .ufo-crashed {
@@ -31,6 +32,30 @@ main {
         .text-explaniation {
             text-align: justify;
             margin-top: 1rem;
+        }
+    }
+
+    .society-section {
+        background-image: linear-gradient(
+            to bottom,
+            #07060e,
+            #0e0f14,
+            #15161c,
+            #1a1c23,
+            #1f222a,
+            #1f222a,
+            #20232a,
+            #20232a,
+            #1b1d23,
+            #16171c,
+            #101016,
+            #07060e
+        );
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        img {
+            width: 90%;
+            box-shadow: rgba(20, 20, 20, 0.35) 0px 5px 15px;
         }
     }
 
@@ -59,25 +84,13 @@ main {
             width: 100%;
             padding: 4rem;
             margin: 1rem auto;
-            background-image: linear-gradient(
-                to right top,
-                #262b34,
-                #21252d,
-                #1c1e26,
-                #17181f,
-                #121218,
-                #121218,
-                #121218,
-                #121218,
-                #17181f,
-                #1c1e26,
-                #21252d,
-                #262b34
-            );
+            background-color: #464748;
             color: #fff;
-            border: 1px solid #262b34;
+            border: 2px solid #262b34;
+            border-radius: 1rem;
             text-align: center;
             font-size: 1.7rem;
+            font-weight: 700;
         }
     }
 
@@ -122,6 +135,10 @@ main {
         }
     }
 
+    .road-map-container {
+        width: 70%;
+    }
+
     .tittle-road {
         text-align: center;
         padding: 2rem;
@@ -145,6 +162,14 @@ main {
     }
 }
 
+.sd-text {
+    transition: all 0.2s ease-in-out;
+}
+
+.sd-text:hover {
+    color: rgb(211, 167, 23);
+}
+
 @media screen and (max-width: 990px) {
     .society-information,
     .society-explaniated {
@@ -156,7 +181,7 @@ main {
         }
 
         p {
-            text-align: justify !important;
+            text-align: center !important;
         }
         img {
             float: none !important;
@@ -196,7 +221,7 @@ main {
         margin: 0 auto 0 0.25rem !important;
         float: none !important;
 
-        img{
+        img {
             justify-content: center !important;
         }
     }
@@ -215,7 +240,7 @@ main {
         width: 100% !important;
         p {
             font-size: 1rem !important;
-            text-align: center !important;
+            text-align: justify !important;
             margin: 1rem auto !important;
         }
 
@@ -238,6 +263,27 @@ main {
             width: 90% !important;
         }
     }
+
+    .img-container .images-benefits.active {
+        position: absolute;
+        top: auto;
+        left: 0rem;
+        width: 100%;
+        z-index: 100;
+        padding: 0 1rem;
+    }
+    .images-benefits.active::before {
+        content: "Click again to close the picture";
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translate(-50%, -25px);
+        width: 50%;
+        text-align: center;
+        background-color: #131314cc;
+        border: 1px solid #262b34;
+        border-radius: 1rem;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -245,12 +291,3 @@ main {
         font-size: 3rem !important;
     }
 }
-
-// Idea
-
-// #element {
-//     opacity: 0;
-//     justify-content: center;
-//     margin: 10rem;
-
-// }

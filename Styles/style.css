@@ -386,12 +386,37 @@ header .container-fluid {
   padding: 1rem 2rem;
 }
 
-header img {
+header .twitter-svg {
+  fill: #fff;
   width: 2rem;
 }
 
 header .img-logo {
   width: 3rem;
+}
+
+.link-twitter:hover > .twitter-svg {
+  fill: #1DA1F2;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-instagram:hover > .instagram-svg path {
+  fill: #E1306C;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-discord:hover > .discord-svg path {
+  fill: #5865F2;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-opensea:hover > .opensea-svg path {
+  fill: #1868B7;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 450px) {
@@ -401,7 +426,7 @@ header .img-logo {
   header nav .container-fluid {
     padding: .5rem 1rem !important;
   }
-  header nav img:not(.img-logo) {
+  header nav svg:not(.img-logo) {
     width: 1.5rem !important;
   }
   header nav .img-logo {
@@ -438,6 +463,7 @@ main .society-explaniated img :not(.being-stranger),
 main .being-stranger img :not(.being-stranger) {
   display: block;
   float: right;
+  width: 100%;
 }
 
 main .society-information .ufo-crashed,
@@ -452,6 +478,19 @@ main .society-explaniated .text-explaniation,
 main .being-stranger .text-explaniation {
   text-align: justify;
   margin-top: 1rem;
+}
+
+main .society-section {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#07060e), color-stop(#0e0f14), color-stop(#15161c), color-stop(#1a1c23), color-stop(#1f222a), color-stop(#1f222a), color-stop(#20232a), color-stop(#20232a), color-stop(#1b1d23), color-stop(#16171c), color-stop(#101016), to(#07060e));
+  background-image: linear-gradient(to bottom, #07060e, #0e0f14, #15161c, #1a1c23, #1f222a, #1f222a, #20232a, #20232a, #1b1d23, #16171c, #101016, #07060e);
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+main .society-section img {
+  width: 90%;
+  -webkit-box-shadow: rgba(20, 20, 20, 0.35) 0px 5px 15px;
+          box-shadow: rgba(20, 20, 20, 0.35) 0px 5px 15px;
 }
 
 main .justify-content-center {
@@ -483,12 +522,13 @@ main .society-explaniated .sell-button {
   width: 100%;
   padding: 4rem;
   margin: 1rem auto;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#262b34), color-stop(#21252d), color-stop(#1c1e26), color-stop(#17181f), color-stop(#121218), color-stop(#121218), color-stop(#121218), color-stop(#121218), color-stop(#17181f), color-stop(#1c1e26), color-stop(#21252d), to(#262b34));
-  background-image: linear-gradient(to right top, #262b34, #21252d, #1c1e26, #17181f, #121218, #121218, #121218, #121218, #17181f, #1c1e26, #21252d, #262b34);
+  background-color: #464748;
   color: #fff;
-  border: 1px solid #262b34;
+  border: 2px solid #262b34;
+  border-radius: 1rem;
   text-align: center;
   font-size: 1.7rem;
+  font-weight: 700;
 }
 
 main .benefits-pictures .img-container {
@@ -536,6 +576,10 @@ main .designer-information li {
   list-style: disc;
 }
 
+main .road-map-container {
+  width: 70%;
+}
+
 main .tittle-road {
   text-align: center;
   padding: 2rem;
@@ -559,6 +603,15 @@ main .designer-information .designer-sign {
   font-family: cursive;
 }
 
+.sd-text {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.sd-text:hover {
+  color: #d3a717;
+}
+
 @media screen and (max-width: 990px) {
   .society-information,
   .society-explaniated {
@@ -574,7 +627,7 @@ main .designer-information .designer-sign {
   }
   .society-information p,
   .society-explaniated p {
-    text-align: justify !important;
+    text-align: center !important;
   }
   .society-information img,
   .society-explaniated img {
@@ -631,7 +684,7 @@ main .designer-information .designer-sign {
   }
   .road-map-container p {
     font-size: 1rem !important;
-    text-align: center !important;
+    text-align: justify !important;
     margin: 1rem auto !important;
   }
   .road-map-container img {
@@ -651,6 +704,27 @@ main .designer-information .designer-sign {
   }
   .designer-information img {
     width: 90% !important;
+  }
+  .img-container .images-benefits.active {
+    position: absolute;
+    top: auto;
+    left: 0rem;
+    width: 100%;
+    z-index: 100;
+    padding: 0 1rem;
+  }
+  .images-benefits.active::before {
+    content: "Click again to close the picture";
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    -webkit-transform: translate(-50%, -25px);
+            transform: translate(-50%, -25px);
+    width: 50%;
+    text-align: center;
+    background-color: #131314cc;
+    border: 1px solid #262b34;
+    border-radius: 1rem;
   }
 }
 
@@ -673,7 +747,8 @@ footer .footer-content {
   text-align: center;
 }
 
-footer img {
+footer .twitter-svg {
+  fill: #fff;
   width: 2rem;
 }
 
