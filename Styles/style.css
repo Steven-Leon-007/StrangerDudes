@@ -342,21 +342,23 @@ template {
 }
 
 h1 {
-  font-family: 'Overlock', cursive;
+  font-family: "Raleway", sans-serif;
   font-size: 6rem;
   color: #fff;
 }
 
 h2 {
-  font-family: 'Overlock', cursive;
+  font-family: 'Gilbert-Bold-Preview4', Gilbert;
+  font-weight: 700;
+  font-style: normal;
   font-size: 4rem;
   color: #fff;
 }
 
 p {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.5rem;
-  color: #fff;
+  color: #f7f7f7;
 }
 
 li {
@@ -386,67 +388,91 @@ header .container-fluid {
   padding: 1rem 2rem;
 }
 
+header .nav {
+  margin-top: .6rem;
+}
+
 header .twitter-svg {
   fill: #fff;
   width: 2rem;
 }
 
 header .img-logo {
-  width: 3rem;
+  width: 6rem;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+
+header svg,
+header .link-instagram > .instagram-svg path,
+header .link-discord > .discord-svg path,
+header .link-opensea > .opensea-svg path {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .link-twitter:hover > .twitter-svg {
-  fill: #1DA1F2;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  fill: #1da1f2;
 }
 
 .link-instagram:hover > .instagram-svg path {
-  fill: #E1306C;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  fill: #e1306c;
 }
 
 .link-discord:hover > .discord-svg path {
-  fill: #5865F2;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  fill: #5865f2;
 }
 
 .link-opensea:hover > .opensea-svg path {
-  fill: #1868B7;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  fill: #1868b7;
 }
 
 @media screen and (max-width: 450px) {
-  header {
-    background-repeat: repeat !important;
-  }
   header nav .container-fluid {
-    padding: .5rem 1rem !important;
+    padding: 0.5rem 1rem !important;
   }
   header nav svg:not(.img-logo) {
-    width: 1.5rem !important;
+    width: 1.5rem;
   }
   header nav .img-logo {
-    width: 2rem !important;
+    width: 4rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  nav svg:not(.img-logo) {
+    width: 1.2rem !important;
+  }
+  nav .img-logo {
+    width: 3rem !important;
+    top: 1.2rem;
   }
 }
 
 main {
   display: inline-block;
-  background-color: #07060e;
+  background-color: #07070f;
   width: 100%;
 }
 
 main .main-ilustration {
   margin: 0;
-  background-color: #07060e;
 }
 
 main .main-ilustration .ilustration {
   width: 100%;
+  margin-top: -1px;
+}
+
+main .main-ilustration .ilustration-divisor {
+  margin-top: -2px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+main .main-ilustration #divisor {
+  margin-top: -1px;
 }
 
 main .society-information,
@@ -458,17 +484,9 @@ main .being-stranger {
           align-items: center;
 }
 
-main .society-information img :not(.being-stranger),
-main .society-explaniated img :not(.being-stranger),
-main .being-stranger img :not(.being-stranger) {
-  display: block;
-  float: right;
-  width: 100%;
-}
-
-main .society-information .ufo-crashed,
-main .society-explaniated .ufo-crashed,
-main .being-stranger .ufo-crashed {
+main .society-information .road-illustration,
+main .society-explaniated .road-illustration,
+main .being-stranger .road-illustration {
   display: block;
   float: right;
 }
@@ -481,20 +499,17 @@ main .being-stranger .text-explaniation {
 }
 
 main .society-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#07060e), color-stop(#0e0f14), color-stop(#15161c), color-stop(#1a1c23), color-stop(#1f222a), color-stop(#1f222a), color-stop(#20232a), color-stop(#20232a), color-stop(#1b1d23), color-stop(#16171c), color-stop(#101016), to(#07060e));
-  background-image: linear-gradient(to bottom, #07060e, #0e0f14, #15161c, #1a1c23, #1f222a, #1f222a, #20232a, #20232a, #1b1d23, #16171c, #101016, #07060e);
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
 }
 
 main .society-section img {
   width: 90%;
-  -webkit-box-shadow: rgba(20, 20, 20, 0.35) 0px 5px 15px;
-          box-shadow: rgba(20, 20, 20, 0.35) 0px 5px 15px;
 }
 
-main .justify-content-center {
-  margin: 2rem auto;
+main .society-section .mint-text {
+  text-align-last: right;
+  -moz-text-align-last: right;
 }
 
 main .society-information {
@@ -515,7 +530,7 @@ main .society-explaniated img {
 }
 
 main .society-explaniated p {
-  text-align: right;
+  text-align: justify;
 }
 
 main .society-explaniated .sell-button {
@@ -580,6 +595,22 @@ main .road-map-container {
   width: 70%;
 }
 
+main .road-map-container .col-4 {
+  margin: 1.5rem auto;
+}
+
+main .road-map-container img {
+  width: 5rem;
+}
+
+main .road-map-container .diferent-width {
+  width: 7rem;
+}
+
+main .road-map-container #lower-width {
+  width: 4rem;
+}
+
 main .tittle-road {
   text-align: center;
   padding: 2rem;
@@ -591,6 +622,7 @@ main .designer-information {
 
 main .designer-information img {
   width: 350px;
+  border-radius: 1rem;
 }
 
 main .designer-information p {
@@ -601,6 +633,12 @@ main .designer-information .designer-sign {
   text-align: right;
   margin: 3rem 3rem 0;
   font-family: cursive;
+}
+
+.animated-appear {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .sd-text {
@@ -624,19 +662,28 @@ main .designer-information .designer-sign {
   .society-information h2,
   .society-explaniated h2 {
     text-align: center !important;
+    margin: 2rem auto;
+    font-size: 3rem;
   }
   .society-information p,
   .society-explaniated p {
-    text-align: center !important;
+    text-align: justify !important;
+    font-size: 1.2rem !important;
   }
   .society-information img,
   .society-explaniated img {
     float: none !important;
     margin: 3rem auto 0.5rem;
-    width: 100%;
+    width: 100% !important;
   }
-  .justify-content-center {
-    margin: 1rem auto 0 !important;
+  .ilustration-divisor {
+    margin-bottom: 0 !important;
+  }
+  .mint-text, .text-explaniation {
+    text-align-last: center !important;
+  }
+  .road-illustration {
+    display: none !important;
   }
   .tittle-road {
     padding: 1rem 2rem !important;
@@ -675,20 +722,33 @@ main .designer-information .designer-sign {
             flex-direction: column !important;
     margin: 2rem 1rem !important;
   }
-  .being-stranger p,
   .being-stranger h2 {
     text-align: center !important;
+    font-size: 3rem !important;
+  }
+  .being-stranger p {
+    text-align: justify !important;
+    font-size: 1.2rem !important;
   }
   .road-map-container {
     width: 100% !important;
   }
-  .road-map-container p {
-    font-size: 1rem !important;
-    text-align: justify !important;
-    margin: 1rem auto !important;
+  .road-map-container h2 {
+    font-size: 3rem !important;
   }
-  .road-map-container img {
-    width: 100% !important;
+  .road-map-container p {
+    font-size: 1.2rem !important;
+    text-align: justify !important;
+    margin: 1rem !important;
+  }
+  .road-map-container img:not(.diferent-width) {
+    width: 70% !important;
+  }
+  .road-map-container .diferent-width {
+    width: 90% !important;
+  }
+  .road-map-container #lower-width {
+    width: 60% !important;
   }
   .designer-information {
     -webkit-box-orient: vertical !important;
@@ -756,6 +816,14 @@ footer .img-logo {
   width: 3rem;
 }
 
+footer svg,
+footer .link-instagram > .instagram-svg path,
+footer .link-discord > .discord-svg path,
+footer .link-opensea > .opensea-svg path {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 footer .footer-links {
   margin: 2rem auto 0.5rem;
   width: 30%;
@@ -786,5 +854,12 @@ footer .copy-terms a {
   .copy-terms a {
     margin: 1rem 0.5rem !important;
   }
+}
+
+@font-face {
+  font-family: 'Gilbert-Bold-Preview4';
+  src: url("../Fonts/Gilbert-Bold-Preview4.ttf.woff") format("woff"), url("../Fonts/Gilbert-Bold-Preview4.ttf.svg#Gilbert-Bold-Preview4") format("svg"), url("../Fonts/Gilbert-Bold-Preview4.ttf.eot"), url("../Fonts/Gilbert-Bold-Preview4.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */

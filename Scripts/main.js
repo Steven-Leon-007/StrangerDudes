@@ -4,3 +4,16 @@ imgPop.forEach(popup => popup.addEventListener('click', () => {
 
 }));
 
+let animated = document.querySelectorAll('.animated-appear');
+
+function scrollToAppear() {
+    let scrollTop = document.documentElement.scrollTop;
+    for(var i = 0; i < animated.length; i++) {
+        let heightScroll = animated[i].offsetTop;
+        if(heightScroll - 550 < scrollTop) {
+            animated[i].style.opacity = 1;
+        }
+    }
+}
+
+window.addEventListener('scroll', scrollToAppear);

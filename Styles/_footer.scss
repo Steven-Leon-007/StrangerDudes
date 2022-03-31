@@ -28,6 +28,13 @@ footer {
     .img-logo {
         width: 3rem;
     }
+    
+    svg,
+    .link-instagram > .instagram-svg path,
+    .link-discord > .discord-svg path,
+    .link-opensea > .opensea-svg path {
+        transition: all 0.2s ease-in-out;
+    }
 
     .footer-links {
         margin: 2rem auto 0.5rem;

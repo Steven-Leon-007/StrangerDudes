@@ -1,60 +1,78 @@
 header {
     background-image: url(../Pictures/Banner-Header.svg);
     background-repeat: repeat;
+
     .container-fluid {
         padding: 1rem 2rem;
     }
 
-    .twitter-svg{
+    .nav{
+        margin-top: .6rem;
+    }
+
+    .twitter-svg {
         fill: #fff;
         width: 2rem;
     }
 
     .img-logo {
-        width: 3rem;
+        width: 6rem;
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
     }
 
+    svg,
+    .link-instagram > .instagram-svg path,
+    .link-discord > .discord-svg path,
+    .link-opensea > .opensea-svg path {
+        transition: all 0.2s ease-in-out;
+    }
 }
 
-.link-twitter:hover > .twitter-svg{
-    fill: #1DA1F2;
-    transition: all 0.2s ease-in-out;
+.link-twitter:hover > .twitter-svg {
+    fill: #1da1f2;
 }
 
-.link-instagram:hover > .instagram-svg path{
-    fill: #E1306C;
-    transition: all 0.2s ease-in-out;
+.link-instagram:hover > .instagram-svg path {
+    fill: #e1306c;
 }
 
-.link-discord:hover > .discord-svg path{
-    fill: #5865F2;
-    transition: all 0.2s ease-in-out;
+.link-discord:hover > .discord-svg path {
+    fill: #5865f2;
 }
 
-.link-opensea:hover > .opensea-svg path{
-    fill: #1868B7;
-    transition: all 0.2s ease-in-out;
+.link-opensea:hover > .opensea-svg path {
+    fill: #1868b7;
 }
 
 @media screen and (max-width: 450px) {
+    header {
+        nav {
+            .container-fluid {
+                padding: 0.5rem 1rem !important;
+            }
 
-    header{
-        background-repeat: repeat !important;
-    nav{
+            svg:not(.img-logo) {
+                width: 1.5rem;
+            }
 
-        .container-fluid{
-            padding: .5rem 1rem !important;
-        }
-
-        svg:not(.img-logo){
-            width: 1.5rem !important;
-        }
-
-        .img-logo{
-            width: 2rem !important;
+            .img-logo {
+                width: 4rem;
+            }
         }
     }
 }
 
-}
+@media screen and (max-width: 376px) {
+    nav {
+        svg:not(.img-logo) {
+            width: 1.2rem !important;
+        }
 
+        .img-logo {
+            width: 3rem !important;
+            top: 1.2rem;
+        }
+    }
+}

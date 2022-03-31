@@ -1,45 +1,56 @@
-
 @import "reset";
 
-h1{
-    font-family: 'Overlock', cursive;
+h1 {
+    font-family: "Raleway", sans-serif;
     font-size: 6rem;
     color: #fff;
-
 }
 
-h2{
-    font-family: 'Overlock', cursive;
+h2 {
+    font-family: 'Gilbert-Bold-Preview4', Gilbert;
+    font-weight: 700;
+    font-style: normal;
+
     font-size: 4rem;
-    color: #fff;    
-}
-
-p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.5rem;
     color: #fff;
-
 }
 
-li{
+p {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    color: #f7f7f7;
+}
+
+li {
     list-style: none;
 }
 
-div{
+div {
     font-size: 1rem;
     color: #fff;
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
 
-:root{
+
+:root {
     color-scheme: dark;
 }
-
 
 @import "header";
 @import "main";
 @import "footer";
+
+
+@font-face {
+    font-family: 'Gilbert-Bold-Preview4';
+    src:url('../Fonts/Gilbert-Bold-Preview4.ttf.woff') format('woff'),
+        url('../Fonts/Gilbert-Bold-Preview4.ttf.svg#Gilbert-Bold-Preview4') format('svg'),
+        url('../Fonts/Gilbert-Bold-Preview4.ttf.eot'),
+        url('../Fonts/Gilbert-Bold-Preview4.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
