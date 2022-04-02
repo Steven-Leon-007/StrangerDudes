@@ -682,6 +682,9 @@ main .designer-information .designer-sign {
   .mint-text, .text-explaniation {
     text-align-last: center !important;
   }
+  .mint-text br, .text-explaniation br {
+    display: none !important;
+  }
   .road-illustration {
     display: none !important;
   }
