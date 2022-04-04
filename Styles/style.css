@@ -342,8 +342,8 @@ template {
 }
 
 h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 6rem;
+  font-family: 'Gilbert-Bold-Preview4', Gilbert;
+  font-size: 4rem;
   color: #fff;
 }
 
@@ -355,7 +355,15 @@ h2 {
   color: #fff;
 }
 
-p {
+h3 {
+  font-family: 'Gilbert-Bold-Preview4', Gilbert;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  color: #fff;
+}
+
+p, li {
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   color: #f7f7f7;
@@ -371,6 +379,7 @@ div {
 }
 
 a {
+  font-family: "Lato", sans-serif;
   text-decoration: none;
   color: #fff;
 }
@@ -380,8 +389,9 @@ a {
 }
 
 header {
-  background-image: url(../Pictures/Banner-Header.svg);
-  background-repeat: repeat;
+  background-image: url(../Pictures/header-test-01.svg);
+  background-color: #07070f;
+  margin-bottom: -2px;
 }
 
 header .container-fluid {
@@ -621,12 +631,12 @@ main .designer-information {
 }
 
 main .designer-information img {
-  width: 350px;
+  width: 60%;
   border-radius: 1rem;
 }
 
 main .designer-information p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 main .designer-information .designer-sign {
@@ -641,13 +651,23 @@ main .designer-information .designer-sign {
   transition: all 0.5s ease-in-out;
 }
 
-.sd-text {
+.sd-text, .road-map-link {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .sd-text:hover {
   color: #d3a717;
+}
+
+.road-map-link:hover {
+  color: #98e1e5;
+}
+
+@media screen and (max-width: 1210px) {
+  .mint-text br {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -679,11 +699,11 @@ main .designer-information .designer-sign {
   .ilustration-divisor {
     margin-bottom: 0 !important;
   }
-  .mint-text, .text-explaniation {
+  .mint-text, .text-explaniation, .text-designer-info {
     text-align-last: center !important;
   }
-  .mint-text br, .text-explaniation br {
-    display: none !important;
+  .text-explaniation {
+    margin: 2rem auto !important;
   }
   .road-illustration {
     display: none !important;
@@ -738,6 +758,7 @@ main .designer-information .designer-sign {
   }
   .road-map-container h2 {
     font-size: 3rem !important;
+    margin-bottom: 0;
   }
   .road-map-container p {
     font-size: 1.2rem !important;
@@ -758,7 +779,7 @@ main .designer-information .designer-sign {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    margin: 2rem auto !important;
+    margin: 3rem auto 4rem !important;
   }
   .designer-information p:not(.designer-sign) {
     font-size: 1.5rem !important;
@@ -797,6 +818,12 @@ main .designer-information .designer-sign {
   }
 }
 
+@media screen and (width: 375px), (width: 912px), (width: 280px) {
+  .ilustration-divisor {
+    margin-top: -1px !important;
+  }
+}
+
 footer {
   background-image: -webkit-gradient(linear, left top, right top, from(#07060e), color-stop(#101016), color-stop(#16171c), color-stop(#1b1d23), color-stop(#20232a), color-stop(#20232a), color-stop(#20232a), color-stop(#20232a), color-stop(#1b1d23), color-stop(#16171c), color-stop(#101016), to(#07060e));
   background-image: linear-gradient(to right, #07060e, #101016, #16171c, #1b1d23, #20232a, #20232a, #20232a, #20232a, #1b1d23, #16171c, #101016, #07060e);
@@ -816,7 +843,8 @@ footer .twitter-svg {
 }
 
 footer .img-logo {
-  width: 3rem;
+  width: 4rem;
+  margin-top: .5rem;
 }
 
 footer svg,
@@ -838,9 +866,15 @@ footer .copy-terms a {
   display: inline-block;
   font-size: 0.9rem;
   margin: 1rem;
+  -webkit-transition: all 0.2 ease-in-out;
+  transition: all 0.2 ease-in-out;
 }
 
-@media screen and (max-width: 880px) {
+.copy-terms a:hover {
+  color: #921174;
+}
+
+@media screen and (max-width: 890px) {
   .footer-links {
     width: 90% !important;
   }
@@ -855,7 +889,75 @@ footer .copy-terms a {
   }
   .copy-terms p,
   .copy-terms a {
+    font-size: 0.8rem !important;
     margin: 1rem 0.5rem !important;
+  }
+}
+
+.tyc-main {
+  background-image: url(../Pictures/background-stars-tyc-01.svg);
+}
+
+.tyc-main .container-fluid {
+  width: 60%;
+  margin-bottom: 4.8rem;
+}
+
+.tyc-main p, .tyc-main li {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.tyc-main li {
+  list-style: disc;
+  margin: 1.5rem auto;
+}
+
+.tyc-main .last-update-sign {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 2.5rem;
+}
+
+.last-update-sign:hover {
+  color: #234ea4;
+}
+
+@media screen and (max-width: 953px) {
+  main h1 {
+    font-size: 3rem;
+  }
+  main h3 {
+    font-size: 1.5rem;
+  }
+  main p, main li {
+    font-size: 1.3rem;
+  }
+  main ul {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .tyc-main .container-fluid {
+    width: 80%;
+  }
+  .tyc-main h1 {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .tyc-main h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .tyc-main p {
+    text-align: justify;
+    font-size: 1.1rem;
+    text-align-last: center;
+  }
+  .tyc-main li {
+    font-size: 1.1rem;
   }
 }
 

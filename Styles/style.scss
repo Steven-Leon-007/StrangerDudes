@@ -1,8 +1,8 @@
 @import "reset";
 
 h1 {
-    font-family: "Raleway", sans-serif;
-    font-size: 6rem;
+    font-family: 'Gilbert-Bold-Preview4', Gilbert;
+    font-size: 4rem;
     color: #fff;
 }
 
@@ -10,12 +10,19 @@ h2 {
     font-family: 'Gilbert-Bold-Preview4', Gilbert;
     font-weight: 700;
     font-style: normal;
-
     font-size: 4rem;
     color: #fff;
 }
 
-p {
+h3{
+    font-family: 'Gilbert-Bold-Preview4', Gilbert;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: #fff;
+}
+
+p, li {
     font-family: "Lato", sans-serif;
     font-size: 1.5rem;
     color: #f7f7f7;
@@ -31,6 +38,7 @@ div {
 }
 
 a {
+    font-family: "Lato", sans-serif;
     text-decoration: none;
     color: #fff;
 }
@@ -43,6 +51,7 @@ a {
 @import "header";
 @import "main";
 @import "footer";
+@import "tycStyle";
 
 
 @font-face {

@@ -20,15 +20,16 @@ footer {
         text-align: center;
     }
 
-    .twitter-svg{
+    .twitter-svg {
         fill: #fff;
         width: 2rem;
     }
 
     .img-logo {
-        width: 3rem;
+        width: 4rem;
+        margin-top: .5rem;
     }
-    
+
     svg,
     .link-instagram > .instagram-svg path,
     .link-discord > .discord-svg path,
@@ -43,18 +44,22 @@ footer {
     }
 
     .copy-terms {
-
         .copyright-text,
         a {
             display: inline-block;
             font-size: 0.9rem;
             margin: 1rem;
+            transition: all 0.2 ease-in-out;
         }
-
     }
 }
 
-@media screen and (max-width: 880px) {
+.copy-terms a:hover{
+    color: #921174;
+}
+
+
+@media screen and (max-width: 890px) {
     .footer-links {
         width: 90% !important;
     }
@@ -63,10 +68,8 @@ footer {
         align-items: center;
         p,
         a {
+            font-size: 0.8rem !important; 
             margin: 1rem 0.5rem !important;
         }
     }
 }
-
-
-

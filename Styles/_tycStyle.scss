@@ -1,0 +1,70 @@
+.tyc-main{
+    background-image: url(../Pictures/background-stars-tyc-01.svg);
+
+    .container-fluid{
+        width: 60%;
+        margin-bottom: 4.8rem;
+    }
+
+    p,li{
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+
+    li{
+        list-style: disc;
+        margin: 1.5rem auto;
+    }
+
+    .last-update-sign{
+        transition: all 0.2s ease-in-out;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.last-update-sign:hover{
+    color: #234ea4;
+}
+
+@media screen and (max-width:953px){
+    main{
+        h1{
+            font-size: 3rem;
+        }
+        h3{
+            font-size: 1.5rem;
+        }
+        p,li{
+            font-size: 1.3rem;
+        }
+        ul{
+            padding-left: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 570px){
+    .tyc-main{
+
+        .container-fluid{
+            width: 80%;
+        }
+        h1{
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        h3{
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            font-size: 1.1rem;
+            text-align-last: center;
+        }
+        li{
+            font-size: 1.1rem;
+        }
+    }
+}

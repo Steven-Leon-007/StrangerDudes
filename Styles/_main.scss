@@ -9,6 +9,7 @@ main {
         .ilustration {
             width: 100%;
             margin-top: -1px;
+
         }
 
         .ilustration-divisor {
@@ -150,12 +151,12 @@ main {
     .designer-information {
         margin: 4rem 2rem;
         img {
-            width: 350px;
+            width: 60%;
             border-radius: 1rem;
         }
 
         p {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         .designer-sign {
@@ -171,12 +172,23 @@ main {
     transition: all 0.5s ease-in-out;
 }
 
-.sd-text {
+.sd-text, .road-map-link {
     transition: all 0.2s ease-in-out;
 }
 
 .sd-text:hover {
     color: rgb(211, 167, 23);
+}
+
+
+.road-map-link:hover{
+    color: #98e1e5;
+}
+
+@media screen and (max-width: 1210px){
+    .mint-text br{
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -206,12 +218,12 @@ main {
         margin-bottom: 0 !important;
     }
 
-    .mint-text, .text-explaniation{
+    .mint-text, .text-explaniation, .text-designer-info{
         text-align-last: center !important;
+    }
 
-        br{
-            display: none !important;
-        }
+    .text-explaniation{
+        margin: 2rem auto !important;
     }
 
     .road-illustration {
@@ -270,6 +282,7 @@ main {
 
         h2 {
             font-size: 3rem !important;
+            margin-bottom: 0;
         }
         p {
             font-size: 1.2rem !important;
@@ -290,7 +303,7 @@ main {
 
     .designer-information {
         flex-direction: column !important;
-        margin: 2rem auto !important;
+        margin: 3rem auto 4rem !important;
 
         p:not(.designer-sign) {
             font-size: 1.5rem !important;
@@ -328,5 +341,11 @@ main {
 @media screen and (max-width: 450px) {
     h2 {
         font-size: 3rem !important;
+    }
+}
+
+@media screen and (width:375px), (width:912px), (width:280px){
+    .ilustration-divisor{
+        margin-top: -1px !important;
     }
 }
