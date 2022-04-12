@@ -1,19 +1,6 @@
 footer {
-    background-image: linear-gradient(
-        to right,
-        #07060e,
-        #101016,
-        #16171c,
-        #1b1d23,
-        #20232a,
-        #20232a,
-        #20232a,
-        #20232a,
-        #1b1d23,
-        #16171c,
-        #101016,
-        #07060e
-    );
+    margin-top: 2rem;
+
     .footer-content {
         padding: 1.3rem;
         align-items: center;
@@ -26,8 +13,8 @@ footer {
     }
 
     .img-logo {
-        width: 4rem;
-        margin-top: .5rem;
+        width: 6rem;
+        margin: .5rem auto;
     }
 
     svg,

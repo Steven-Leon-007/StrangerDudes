@@ -1,6 +1,11 @@
+body{
+    background-color: #07070f;
+    background-image: url(../Pictures/stars-background-main-01.svg);
+}
+
+
 main {
     display: inline-block;
-    background-color: #07070f;
     width: 100%;
 
     .main-ilustration {
@@ -25,14 +30,10 @@ main {
 
     .society-information,
     .society-explaniated,
-    .being-stranger {
-        margin: 2rem;
+    .being-stranger {   
+        width: 90%;
+        margin: 2rem auto;
         align-items: center;
-
-        .road-illustration {
-            display: block;
-            float: right;
-        }
 
         .text-explaniation {
             text-align: justify;
@@ -40,11 +41,15 @@ main {
         }
     }
 
+    .text-button-society{
+        margin-right: 2rem;
+    }
+
     .society-section {
         padding-bottom: 1.5rem;
         padding-top: 1.5rem;
         img {
-            width: 90%;
+            width: 80%;
         }
 
         .mint-text {
@@ -53,17 +58,29 @@ main {
         }
     }
 
+    .text-society{
+        margin-left: 2rem;
+
+    }
+
     .society-information {
-        margin: 0 2rem 1rem;
+        margin: 0 auto 1rem;
+
+        img{
+            float: right;
+            margin-right: 2rem;
+            display: block;
+        }
     }
 
     .society-explaniated {
         flex-direction: row-reverse;
-        margin: 2rem;
+        margin: 2rem auto;
 
         img {
             display: block;
-            float: left;
+            margin: 0 auto;
+            width: 85%;
         }
 
         p {
@@ -71,17 +88,23 @@ main {
         }
 
         .sell-button {
-            width: 100%;
-            padding: 4rem;
+            width: 90%;
+            padding: 3rem;
+
             margin: 1rem auto;
+            float: right;
             background-color: #464748;
             color: #fff;
             border: 2px solid #262b34;
             border-radius: 1rem;
             text-align: center;
-            font-size: 1.7rem;
+            font-size: 2rem;
             font-weight: 700;
         }
+    }
+
+    .tittles-change{
+        font-size: 2.8rem;
     }
 
     .benefits-pictures {
@@ -159,11 +182,6 @@ main {
             font-size: 1.5rem;
         }
 
-        .designer-sign {
-            text-align: right;
-            margin: 3rem 3rem 0;
-            font-family: cursive;
-        }
     }
 }
 
@@ -190,11 +208,11 @@ main {
         display: none !important;
     }
 }
-
+    
 @media screen and (max-width: 990px) {
     .society-information,
     .society-explaniated {
-        margin: 0 1rem 1rem !important;
+        margin: 0 auto 1rem !important;
         flex-direction: column-reverse !important;
 
         h2 {
@@ -236,15 +254,29 @@ main {
 
     .society-explaniated {
         flex-direction: column-reverse !important;
-        margin: -2rem 1rem 1rem !important;
+        margin: -2rem auto 1rem !important;
 
         p {
             margin-top: 1rem;
         }
 
         .sell-button {
+            width: 100% !important;
             padding: 2rem !important;
+            margin: 1.5rem auto 1rem!important;
+            float: none !important;
+            display: block;
+            justify-content: center;
         }
+    }
+
+    .text-button-society{
+        margin-right: 0 !important;
+        margin-top: 1rem;
+    }
+
+    .text-society{
+        margin-left: 0 !important;
     }
 
     .benefits-pictures {
@@ -264,7 +296,7 @@ main {
 
     .being-stranger {
         flex-direction: column !important;
-        margin: 2rem 1rem !important;
+        margin: 2rem auto !important;
 
         h2 {
             text-align: center !important;
@@ -349,3 +381,4 @@ main {
         margin-top: -1px !important;
     }
 }
+

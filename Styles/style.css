@@ -341,6 +341,10 @@ template {
   display: none;
 }
 
+body {
+  background-color: #07070f;
+}
+
 h1 {
   font-family: 'Gilbert-Bold-Preview4', Gilbert;
   font-size: 4rem;
@@ -351,7 +355,7 @@ h2 {
   font-family: 'Gilbert-Bold-Preview4', Gilbert;
   font-weight: 700;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #fff;
 }
 
@@ -365,7 +369,7 @@ h3 {
 
 p, li {
   font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #f7f7f7;
 }
 
@@ -384,13 +388,17 @@ a {
   color: #fff;
 }
 
+button {
+  font-family: 'Gilbert-Bold-Preview4', Gilbert;
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   color-scheme: dark;
 }
 
 header {
-  background-image: url(../Pictures/header-test-01.svg);
-  background-color: #07070f;
   margin-bottom: -2px;
 }
 
@@ -460,9 +468,13 @@ header .link-opensea > .opensea-svg path {
   }
 }
 
+body {
+  background-color: #07070f;
+  background-image: url(../Pictures/stars-background-main-01.svg);
+}
+
 main {
   display: inline-block;
-  background-color: #07070f;
   width: 100%;
 }
 
@@ -488,17 +500,11 @@ main .main-ilustration #divisor {
 main .society-information,
 main .society-explaniated,
 main .being-stranger {
-  margin: 2rem;
+  width: 90%;
+  margin: 2rem auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-main .society-information .road-illustration,
-main .society-explaniated .road-illustration,
-main .being-stranger .road-illustration {
-  display: block;
-  float: right;
 }
 
 main .society-information .text-explaniation,
@@ -508,13 +514,17 @@ main .being-stranger .text-explaniation {
   margin-top: 1rem;
 }
 
+main .text-button-society {
+  margin-right: 2rem;
+}
+
 main .society-section {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
 }
 
 main .society-section img {
-  width: 90%;
+  width: 80%;
 }
 
 main .society-section .mint-text {
@@ -522,8 +532,18 @@ main .society-section .mint-text {
   -moz-text-align-last: right;
 }
 
+main .text-society {
+  margin-left: 2rem;
+}
+
 main .society-information {
-  margin: 0 2rem 1rem;
+  margin: 0 auto 1rem;
+}
+
+main .society-information img {
+  float: right;
+  margin-right: 2rem;
+  display: block;
 }
 
 main .society-explaniated {
@@ -531,12 +551,13 @@ main .society-explaniated {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  margin: 2rem;
+  margin: 2rem auto;
 }
 
 main .society-explaniated img {
   display: block;
-  float: left;
+  margin: 0 auto;
+  width: 85%;
 }
 
 main .society-explaniated p {
@@ -544,16 +565,21 @@ main .society-explaniated p {
 }
 
 main .society-explaniated .sell-button {
-  width: 100%;
-  padding: 4rem;
+  width: 90%;
+  padding: 3rem;
   margin: 1rem auto;
+  float: right;
   background-color: #464748;
   color: #fff;
   border: 2px solid #262b34;
   border-radius: 1rem;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 700;
+}
+
+main .tittles-change {
+  font-size: 2.8rem;
 }
 
 main .benefits-pictures .img-container {
@@ -639,12 +665,6 @@ main .designer-information p {
   font-size: 1.5rem;
 }
 
-main .designer-information .designer-sign {
-  text-align: right;
-  margin: 3rem 3rem 0;
-  font-family: cursive;
-}
-
 .animated-appear {
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
@@ -673,7 +693,7 @@ main .designer-information .designer-sign {
 @media screen and (max-width: 990px) {
   .society-information,
   .society-explaniated {
-    margin: 0 1rem 1rem !important;
+    margin: 0 auto 1rem !important;
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
@@ -716,13 +736,27 @@ main .designer-information .designer-sign {
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
-    margin: -2rem 1rem 1rem !important;
+    margin: -2rem auto 1rem !important;
   }
   .society-explaniated p {
     margin-top: 1rem;
   }
   .society-explaniated .sell-button {
+    width: 100% !important;
     padding: 2rem !important;
+    margin: 1.5rem auto 1rem !important;
+    float: none !important;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .text-button-society {
+    margin-right: 0 !important;
+    margin-top: 1rem;
+  }
+  .text-society {
+    margin-left: 0 !important;
   }
   .benefits-pictures {
     margin: 0 auto !important;
@@ -743,7 +777,7 @@ main .designer-information .designer-sign {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    margin: 2rem 1rem !important;
+    margin: 2rem auto !important;
   }
   .being-stranger h2 {
     text-align: center !important;
@@ -825,8 +859,7 @@ main .designer-information .designer-sign {
 }
 
 footer {
-  background-image: -webkit-gradient(linear, left top, right top, from(#07060e), color-stop(#101016), color-stop(#16171c), color-stop(#1b1d23), color-stop(#20232a), color-stop(#20232a), color-stop(#20232a), color-stop(#20232a), color-stop(#1b1d23), color-stop(#16171c), color-stop(#101016), to(#07060e));
-  background-image: linear-gradient(to right, #07060e, #101016, #16171c, #1b1d23, #20232a, #20232a, #20232a, #20232a, #1b1d23, #16171c, #101016, #07060e);
+  margin-top: 2rem;
 }
 
 footer .footer-content {
@@ -843,8 +876,8 @@ footer .twitter-svg {
 }
 
 footer .img-logo {
-  width: 4rem;
-  margin-top: .5rem;
+  width: 6rem;
+  margin: .5rem auto;
 }
 
 footer svg,
@@ -895,7 +928,7 @@ footer .copy-terms a {
 }
 
 .tyc-main {
-  background-image: url(../Pictures/background-stars-tyc-01.svg);
+  background-image: url(../Pictures/background-stars-tyc.svg);
 }
 
 .tyc-main .container-fluid {
@@ -914,6 +947,7 @@ footer .copy-terms a {
 }
 
 .tyc-main .last-update-sign {
+  display: inline-block;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   margin-bottom: 2.5rem;

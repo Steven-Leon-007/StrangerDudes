@@ -1,5 +1,5 @@
 .tyc-main{
-    background-image: url(../Pictures/background-stars-tyc-01.svg);
+    background-image: url(../Pictures/background-stars-tyc.svg);
 
     .container-fluid{
         width: 60%;
@@ -17,6 +17,7 @@
     }
 
     .last-update-sign{
+        display: inline-block;
         transition: all 0.2s ease-in-out;
         margin-bottom: 2.5rem;
     }
