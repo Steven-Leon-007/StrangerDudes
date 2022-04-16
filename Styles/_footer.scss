@@ -1,5 +1,4 @@
 footer {
-    margin-top: 2rem;
 
     .footer-content {
         padding: 1.3rem;
@@ -13,10 +12,13 @@ footer {
     }
 
     .img-logo {
-        width: 6rem;
-        margin: .5rem auto;
+        width: 8rem;
+        margin: .5rem auto 0;
     }
 
+    .logo-footer{
+        margin: 0 auto;
+    }
     svg,
     .link-instagram > .instagram-svg path,
     .link-discord > .discord-svg path,
@@ -34,7 +36,7 @@ footer {
         .copyright-text,
         a {
             display: inline-block;
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             margin: 1rem;
             transition: all 0.2 ease-in-out;
         }
@@ -55,7 +57,7 @@ footer {
         align-items: center;
         p,
         a {
-            font-size: 0.8rem !important; 
+            font-size: 0.75rem !important; 
             margin: 1rem 0.5rem !important;
         }
     }

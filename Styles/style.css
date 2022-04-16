@@ -470,7 +470,7 @@ header .link-opensea > .opensea-svg path {
 
 body {
   background-color: #07070f;
-  background-image: url(../Pictures/stars-background-main-01.svg);
+  background-image: url(../Pictures/stars-background-main.svg);
 }
 
 main {
@@ -528,8 +528,9 @@ main .society-section img {
 }
 
 main .society-section .mint-text {
-  text-align-last: right;
-  -moz-text-align-last: right;
+  margin-left: 3rem;
+  text-align: center;
+  text-align-last: center;
 }
 
 main .text-society {
@@ -541,9 +542,8 @@ main .society-information {
 }
 
 main .society-information img {
-  float: right;
-  margin-right: 2rem;
   display: block;
+  margin: 0 auto;
 }
 
 main .society-explaniated {
@@ -719,6 +719,9 @@ main .designer-information p {
   .ilustration-divisor {
     margin-bottom: 0 !important;
   }
+  .mint-text {
+    margin-left: 0 !important;
+  }
   .mint-text, .text-explaniation, .text-designer-info {
     text-align-last: center !important;
   }
@@ -858,8 +861,22 @@ main .designer-information p {
   }
 }
 
-footer {
-  margin-top: 2rem;
+@media screen and (max-width: 320px) {
+  nav .nav-link {
+    padding: 0.5rem 0.7rem !important;
+  }
+  .road-map-container p {
+    font-size: .8rem !important;
+  }
+  .img-logo {
+    width: 6rem !important;
+  }
+  .footer-links svg {
+    width: 1.2rem !important;
+  }
+  .copy-terms .copyright-text, .copy-terms a {
+    font-size: 0.6rem !important;
+  }
 }
 
 footer .footer-content {
@@ -876,8 +893,12 @@ footer .twitter-svg {
 }
 
 footer .img-logo {
-  width: 6rem;
-  margin: .5rem auto;
+  width: 8rem;
+  margin: .5rem auto 0;
+}
+
+footer .logo-footer {
+  margin: 0 auto;
 }
 
 footer svg,
@@ -897,7 +918,7 @@ footer .footer-links {
 footer .copy-terms .copyright-text,
 footer .copy-terms a {
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   margin: 1rem;
   -webkit-transition: all 0.2 ease-in-out;
   transition: all 0.2 ease-in-out;
@@ -922,7 +943,7 @@ footer .copy-terms a {
   }
   .copy-terms p,
   .copy-terms a {
-    font-size: 0.8rem !important;
+    font-size: 0.75rem !important;
     margin: 1rem 0.5rem !important;
   }
 }
@@ -951,6 +972,10 @@ footer .copy-terms a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   margin-bottom: 2.5rem;
+}
+
+.img-logo-tyc {
+  width: 6rem;
 }
 
 .last-update-sign:hover {

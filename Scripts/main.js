@@ -29,7 +29,6 @@ const pictures = [
 	'../Pictures/Stranger-Dude-7.png',
 	'../Pictures/Stranger-Dude-8.png',
 	'../Pictures/Stranger-Dude-9.png',
-	'../Pictures/Stranger-Dude-10.png',
 ];
 
 let count = 0;

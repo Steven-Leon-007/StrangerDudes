@@ -1,6 +1,6 @@
 body{
     background-color: #07070f;
-    background-image: url(../Pictures/stars-background-main-01.svg);
+    background-image: url(../Pictures/stars-background-main.svg);
 }
 
 
@@ -53,8 +53,9 @@ main {
         }
 
         .mint-text {
-            text-align-last: right;
-            -moz-text-align-last: right;
+            margin-left: 3rem;
+            text-align: center;
+            text-align-last: center;
         }
     }
 
@@ -67,9 +68,8 @@ main {
         margin: 0 auto 1rem;
 
         img{
-            float: right;
-            margin-right: 2rem;
             display: block;
+            margin: 0 auto;
         }
     }
 
@@ -236,6 +236,10 @@ main {
         margin-bottom: 0 !important;
     }
 
+    .mint-text{
+        margin-left: 0 !important;
+    }
+
     .mint-text, .text-explaniation, .text-designer-info{
         text-align-last: center !important;
     }
@@ -382,3 +386,28 @@ main {
     }
 }
 
+
+@media screen and (max-width:320px){
+
+    nav{
+        .nav-link{
+            padding: 0.5rem 0.7rem !important;
+        }
+    }
+
+    .road-map-container p{
+        font-size: .8rem !important;
+    }
+    .img-logo{
+        width: 6rem !important;
+    }
+    .footer-links svg{
+        width: 1.2rem !important;
+    }
+
+    .copy-terms{
+        .copyright-text, a{
+            font-size: 0.6rem !important;
+        }
+    }
+}
