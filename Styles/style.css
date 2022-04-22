@@ -473,6 +473,10 @@ body {
   background-image: url(../Pictures/stars-background-main.svg);
 }
 
+body img {
+  pointer-events: none;
+}
+
 main {
   display: inline-block;
   width: 100%;
@@ -671,7 +675,8 @@ main .designer-information p {
   transition: all 0.5s ease-in-out;
 }
 
-.sd-text, .road-map-link {
+.sd-text,
+.road-map-link {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -722,7 +727,9 @@ main .designer-information p {
   .mint-text {
     margin-left: 0 !important;
   }
-  .mint-text, .text-explaniation, .text-designer-info {
+  .mint-text,
+  .text-explaniation,
+  .text-designer-info {
     text-align-last: center !important;
   }
   .text-explaniation {
@@ -866,7 +873,7 @@ main .designer-information p {
     padding: 0.5rem 0.7rem !important;
   }
   .road-map-container p {
-    font-size: .8rem !important;
+    font-size: 0.8rem !important;
   }
   .img-logo {
     width: 6rem !important;
@@ -874,7 +881,8 @@ main .designer-information p {
   .footer-links svg {
     width: 1.2rem !important;
   }
-  .copy-terms .copyright-text, .copy-terms a {
+  .copy-terms .copyright-text,
+  .copy-terms a {
     font-size: 0.6rem !important;
   }
 }
@@ -948,7 +956,7 @@ footer .copy-terms a {
   }
 }
 
-.tyc-main {
+.body-tyc {
   background-image: url(../Pictures/background-stars-tyc.svg);
 }
 

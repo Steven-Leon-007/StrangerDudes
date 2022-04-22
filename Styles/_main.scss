@@ -1,8 +1,11 @@
-body{
+body {
     background-color: #07070f;
     background-image: url(../Pictures/stars-background-main.svg);
-}
 
+    img {
+        pointer-events: none;
+    }
+}
 
 main {
     display: inline-block;
@@ -14,7 +17,6 @@ main {
         .ilustration {
             width: 100%;
             margin-top: -1px;
-
         }
 
         .ilustration-divisor {
@@ -30,7 +32,7 @@ main {
 
     .society-information,
     .society-explaniated,
-    .being-stranger {   
+    .being-stranger {
         width: 90%;
         margin: 2rem auto;
         align-items: center;
@@ -41,7 +43,7 @@ main {
         }
     }
 
-    .text-button-society{
+    .text-button-society {
         margin-right: 2rem;
     }
 
@@ -59,15 +61,14 @@ main {
         }
     }
 
-    .text-society{
+    .text-society {
         margin-left: 2rem;
-
     }
 
     .society-information {
         margin: 0 auto 1rem;
 
-        img{
+        img {
             display: block;
             margin: 0 auto;
         }
@@ -103,7 +104,7 @@ main {
         }
     }
 
-    .tittles-change{
+    .tittles-change {
         font-size: 2.8rem;
     }
 
@@ -181,7 +182,6 @@ main {
         p {
             font-size: 1.5rem;
         }
-
     }
 }
 
@@ -190,7 +190,8 @@ main {
     transition: all 0.5s ease-in-out;
 }
 
-.sd-text, .road-map-link {
+.sd-text,
+.road-map-link {
     transition: all 0.2s ease-in-out;
 }
 
@@ -198,17 +199,16 @@ main {
     color: rgb(211, 167, 23);
 }
 
-
-.road-map-link:hover{
+.road-map-link:hover {
     color: #98e1e5;
 }
 
-@media screen and (max-width: 1210px){
-    .mint-text br{
+@media screen and (max-width: 1210px) {
+    .mint-text br {
         display: none !important;
     }
 }
-    
+
 @media screen and (max-width: 990px) {
     .society-information,
     .society-explaniated {
@@ -236,15 +236,17 @@ main {
         margin-bottom: 0 !important;
     }
 
-    .mint-text{
+    .mint-text {
         margin-left: 0 !important;
     }
 
-    .mint-text, .text-explaniation, .text-designer-info{
+    .mint-text,
+    .text-explaniation,
+    .text-designer-info {
         text-align-last: center !important;
     }
 
-    .text-explaniation{
+    .text-explaniation {
         margin: 2rem auto !important;
     }
 
@@ -267,19 +269,19 @@ main {
         .sell-button {
             width: 100% !important;
             padding: 2rem !important;
-            margin: 1.5rem auto 1rem!important;
+            margin: 1.5rem auto 1rem !important;
             float: none !important;
             display: block;
             justify-content: center;
         }
     }
 
-    .text-button-society{
+    .text-button-society {
         margin-right: 0 !important;
         margin-top: 1rem;
     }
 
-    .text-society{
+    .text-society {
         margin-left: 0 !important;
     }
 
@@ -380,33 +382,32 @@ main {
     }
 }
 
-@media screen and (width:375px), (width:912px), (width:280px){
-    .ilustration-divisor{
+@media screen and (width: 375px), (width: 912px), (width: 280px) {
+    .ilustration-divisor {
         margin-top: -1px !important;
     }
 }
 
-
-@media screen and (max-width:320px){
-
-    nav{
-        .nav-link{
+@media screen and (max-width: 320px) {
+    nav {
+        .nav-link {
             padding: 0.5rem 0.7rem !important;
         }
     }
 
-    .road-map-container p{
-        font-size: .8rem !important;
+    .road-map-container p {
+        font-size: 0.8rem !important;
     }
-    .img-logo{
+    .img-logo {
         width: 6rem !important;
     }
-    .footer-links svg{
+    .footer-links svg {
         width: 1.2rem !important;
     }
 
-    .copy-terms{
-        .copyright-text, a{
+    .copy-terms {
+        .copyright-text,
+        a {
             font-size: 0.6rem !important;
         }
     }
