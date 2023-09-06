@@ -43,6 +43,9 @@ header {
 .link-opensea:hover > .opensea-svg path {
     fill: #1868b7;
 }
+.link-mail:hover > .mail-svg path {
+    fill: #f2a60c;
+}
 
 @media screen and (max-width: 450px) {
     header {

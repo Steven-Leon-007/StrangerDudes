@@ -4,6 +4,10 @@ footer {
         padding: 1.3rem;
         align-items: center;
         text-align: center;
+
+        .col-12{
+            margin-bottom: 1rem;
+        }
     }
 
     .twitter-svg {
@@ -22,7 +26,8 @@ footer {
     svg,
     .link-instagram > .instagram-svg path,
     .link-discord > .discord-svg path,
-    .link-opensea > .opensea-svg path {
+    .link-opensea > .opensea-svg path,
+    .link-mail > .mail-svg path{
         transition: all 0.2s ease-in-out;
     }
 

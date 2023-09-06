@@ -32,6 +32,7 @@ main {
 
     .society-information,
     .society-explaniated,
+    .sd-as-brand,
     .being-stranger {
         width: 90%;
         margin: 2rem auto;
@@ -40,6 +41,25 @@ main {
         .text-explaniation {
             text-align: justify;
             margin-top: 1rem;
+        }
+    }
+
+    .sd-as-brand {
+        margin: 5rem auto;
+        text-align: right;
+        p {
+            text-align: justify;
+            text-align-last: right;
+        }
+        .sd-brand-text {
+            padding: 0 2rem 0 3rem;
+        }
+
+        .sd-brand-images {
+            width: 90%;
+            padding-bottom: 3rem;
+            margin: 0 auto;
+            display: block;
         }
     }
 
@@ -104,7 +124,7 @@ main {
         }
     }
 
-    .tittles-change {
+    .titles-change {
         font-size: 2.8rem;
     }
 
@@ -167,7 +187,7 @@ main {
         }
     }
 
-    .tittle-road {
+    .title-road {
         text-align: center;
         padding: 2rem;
     }
@@ -254,7 +274,7 @@ main {
         display: none !important;
     }
 
-    .tittle-road {
+    .title-road {
         padding: 1rem 2rem !important;
     }
 
@@ -300,7 +320,8 @@ main {
         }
     }
 
-    .being-stranger {
+    .being-stranger,
+    .sd-as-brand {
         flex-direction: column !important;
         margin: 2rem auto !important;
 
@@ -315,6 +336,17 @@ main {
         }
     }
 
+    .sd-as-brand {
+        flex-direction: column-reverse !important;
+        p {
+            text-align-last: center !important;
+        }
+        .sd-brand-text {
+            margin-top: 3rem;
+            padding: 0 !important;
+        }
+    }
+
     .road-map-container {
         width: 100% !important;
 
@@ -326,16 +358,6 @@ main {
             font-size: 1.2rem !important;
             text-align: justify !important;
             margin: 1rem !important;
-        }
-
-        img:not(.diferent-width) {
-            width: 70% !important;
-        }
-        .diferent-width {
-            width: 90% !important;
-        }
-        #lower-width {
-            width: 60% !important;
         }
     }
 
