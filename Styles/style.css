@@ -376,7 +376,8 @@ header .nav {
 }
 header .twitter-svg {
   fill: #fff;
-  width: 2rem;
+  width: 3rem;
+  transform: translateX(10px);
 }
 header .img-logo {
   width: 6rem;
@@ -555,6 +556,11 @@ main .benefits-pictures .img-container img {
   margin: 0.5rem auto;
   border-radius: 0.7rem;
 }
+main #countdown {
+  font-family: "Gilbert-Bold-Preview4", Gilbert;
+  text-align: center;
+  font-size: 1.8rem;
+}
 main .changing-pictures {
   width: 100%;
 }
@@ -658,6 +664,10 @@ main .designer-information p {
   }
   .ilustration-divisor {
     margin-bottom: 0 !important;
+  }
+  #countdown {
+    text-align: center !important;
+    font-size: 1.8rem !important;
   }
   .mint-text {
     margin-left: 0 !important;
@@ -786,6 +796,9 @@ main .designer-information p {
   h2 {
     font-size: 3rem !important;
   }
+  #countdown {
+    font-size: 1.4rem !important;
+  }
 }
 @media screen and (width: 375px), (width: 912px), (width: 280px) {
   .ilustration-divisor {
@@ -820,7 +833,7 @@ footer .footer-content .col-12 {
 }
 footer .twitter-svg {
   fill: #fff;
-  width: 2rem;
+  width: 3rem;
 }
 footer .img-logo {
   width: 8rem;
@@ -838,7 +851,7 @@ footer .link-mail > .mail-svg path {
 }
 footer .footer-links {
   margin: 2rem auto 0.5rem;
-  width: 30%;
+  width: 40%;
   gap: 0px;
 }
 footer .copy-terms .copyright-text,

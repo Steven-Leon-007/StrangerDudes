@@ -141,6 +141,12 @@ main {
         }
     }
 
+    #countdown{
+        font-family: 'Gilbert-Bold-Preview4', Gilbert;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
     .changing-pictures {
         width: 100%;
     }
@@ -254,6 +260,11 @@ main {
 
     .ilustration-divisor {
         margin-bottom: 0 !important;
+    }
+
+    #countdown{
+        text-align: center !important;
+        font-size: 1.8rem !important;
     }
 
     .mint-text {
@@ -401,6 +412,10 @@ main {
 @media screen and (max-width: 450px) {
     h2 {
         font-size: 3rem !important;
+    }
+
+    #countdown{
+        font-size: 1.4rem !important;
     }
 }
 

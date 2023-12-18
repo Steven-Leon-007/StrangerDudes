@@ -66,26 +66,36 @@ asyncAppear();
 
 document.addEventListener("DOMContentLoaded", () => {
 	const merchSlides = async () => {
-
-		await new Promise((resolve) => setTimeout(resolve, 2000));
-
-		const sdBrand = document.querySelector(".sd-brand-images");
-		let counter = 1;
-
-		function changeImages() {
-			sdBrand.src = `../Pictures/merch-slides/stranger-dudes-merch-${counter}.png`;
-
-			counter++;
-			if (counter > 22) {
-				counter = 1;
-			}
+	  await new Promise((resolve) => setTimeout(resolve, 2000));
+  
+	  const sdBrand = document.querySelector(".sd-brand-images");
+	  let counter = 1;
+  
+	  // Precargar imágenes
+	  const imagePromises = Array.from({ length: 22 }, (_, index) => {
+		const img = new Image();
+		img.src = `../Pictures/merch-slides/stranger-dudes-merch-${index + 1}.png`;
+		return new Promise((resolve) => {
+		  img.onload = resolve;
+		});
+	  });
+  
+	  await Promise.all(imagePromises);
+  
+	  function changeImages() {
+		sdBrand.src = `../Pictures/merch-slides/stranger-dudes-merch-${counter}.png`;
+  
+		counter++;
+		if (counter > 22) {
+		  counter = 1;
 		}
-
-		changeImages();
-
-		setInterval(changeImages, 800);
-	}
-
-
+	  }
+  
+	  changeImages();
+  
+	  setInterval(changeImages, 800);
+	};
+  
 	merchSlides();
-});
+  });
+  
