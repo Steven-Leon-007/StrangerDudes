@@ -419,6 +419,9 @@ header .link-opensea > .opensea-svg path {
   header nav svg:not(.img-logo) {
     width: 1.5rem;
   }
+  header nav .twitter-svg {
+    width: 2rem !important;
+  }
   header nav .img-logo {
     width: 4rem;
   }
@@ -430,6 +433,9 @@ header .link-opensea > .opensea-svg path {
   nav .img-logo {
     width: 3rem !important;
     top: 1.2rem;
+  }
+  nav #twitter-id {
+    width: 1.5rem !important;
   }
 }
 body {
@@ -817,6 +823,9 @@ main .designer-information p {
   }
   .footer-links svg {
     width: 1.2rem !important;
+  }
+  #twitter-id {
+    width: 1.5rem !important;
   }
   .copy-terms .copyright-text,
   .copy-terms a {
