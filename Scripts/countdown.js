@@ -22,7 +22,7 @@ var x = setInterval(function() {
   
     if (distance < 0) {
       clearInterval(x);
-      textInside.innerHTML = "0d 0h 0m 0d";
+      textInside.innerHTML = "0d 0h 0m 0s";
 
       // textInside.innerHTML = "They Arrived!"; for when we have release date
       // sellButton.removeAttribute("disabled");

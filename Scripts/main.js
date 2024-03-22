@@ -20,15 +20,15 @@ window.addEventListener('scroll', scrollToAppear);
 
 
 const pictures = [
-	'../Pictures/Stranger-Dude-1.png',
-	'../Pictures/Stranger-Dude-2.png',
-	'../Pictures/Stranger-Dude-3.png',
-	'../Pictures/Stranger-Dude-4.png',
-	'../Pictures/Stranger-Dude-5.png',
-	'../Pictures/Stranger-Dude-6.png',
-	'../Pictures/Stranger-Dude-7.png',
-	'../Pictures/Stranger-Dude-8.png',
-	'../Pictures/Stranger-Dude-9.png',
+	'../assets/Stranger-Dude-1.png',
+	'../assets/Stranger-Dude-2.png',
+	'../assets/Stranger-Dude-3.png',
+	'../assets/Stranger-Dude-4.png',
+	'../assets/Stranger-Dude-5.png',
+	'../assets/Stranger-Dude-6.png',
+	'../assets/Stranger-Dude-7.png',
+	'../assets/Stranger-Dude-8.png',
+	'../assets/Stranger-Dude-9.png',
 ];
 
 let currentIndex = 0;
@@ -66,36 +66,35 @@ asyncAppear();
 
 document.addEventListener("DOMContentLoaded", () => {
 	const merchSlides = async () => {
-	  await new Promise((resolve) => setTimeout(resolve, 2000));
-  
-	  const sdBrand = document.querySelector(".sd-brand-images");
-	  let counter = 1;
-  
-	  // Precargar imágenes
-	  const imagePromises = Array.from({ length: 22 }, (_, index) => {
-		const img = new Image();
-		img.src = `../Pictures/merch-slides/stranger-dudes-merch-${index + 1}.png`;
-		return new Promise((resolve) => {
-		  img.onload = resolve;
+		await new Promise((resolve) => setTimeout(resolve, 2000));
+
+		const sdBrand = document.querySelector(".sd-brand-images");
+		let counter = 1;
+
+		// Precargar imágenes
+		const imagePromises = Array.from({ length: 22 }, (_, index) => {
+			const img = new Image();
+			img.src = `../assets/merch-slides/stranger-dudes-merch-${index + 1}.png`;
+			return new Promise((resolve) => {
+				img.onload = resolve;
+			});
 		});
-	  });
-  
-	  await Promise.all(imagePromises);
-  
-	  function changeImages() {
-		sdBrand.src = `../Pictures/merch-slides/stranger-dudes-merch-${counter}.png`;
-  
-		counter++;
-		if (counter > 22) {
-		  counter = 1;
+
+		await Promise.all(imagePromises);
+
+		function changeImages() {
+			sdBrand.src = `../assets/merch-slides/stranger-dudes-merch-${counter}.png`;
+
+			counter++;
+			if (counter > 22) {
+				counter = 1;
+			}
 		}
-	  }
-  
-	  changeImages();
-  
-	  setInterval(changeImages, 800);
+
+		changeImages();
+
+		setInterval(changeImages, 800);
 	};
-  
+
 	merchSlides();
-  });
-  
+});

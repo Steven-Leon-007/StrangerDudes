@@ -46,6 +46,10 @@ footer {
             transition: all 0.2 ease-in-out;
         }
     }
+
+    .link-mail:hover > .mail-svg path {
+        fill: #f2a60c;
+    }
 }
 
 .copy-terms a:hover{

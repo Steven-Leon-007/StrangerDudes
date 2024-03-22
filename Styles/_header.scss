@@ -4,8 +4,8 @@ header {
         padding: 1rem 2rem;
     }
 
-    .nav{
-        margin-top: .6rem;
+    .nav {
+        margin-top: 0.6rem;
     }
 
     .twitter-svg {
@@ -44,46 +44,39 @@ header {
 .link-opensea:hover > .opensea-svg path {
     fill: #1868b7;
 }
-.link-mail:hover > .mail-svg path {
-    fill: #f2a60c;
-}
+
 
 @media screen and (max-width: 450px) {
     header {
-        nav {
-            .container-fluid {
-                padding: 0.5rem 1rem !important;
-            }
+        nav .container-fluid {
+            padding: 0.5rem 1rem;
+        }
 
-            svg:not(.img-logo) {
-                width: 1.5rem;
-            }
+        nav svg:not(.img-logo) {
+            width: 1.5rem;
+        }
 
-            .twitter-svg{
-                width: 2rem !important;
-            }
+        .img-logo {
+            width: 4rem;
+        }
 
-            .img-logo {
-                width: 4rem;
-            }
+        .twitter-svg {
+            width: 2rem;
         }
     }
 }
 
 @media screen and (max-width: 376px) {
-    nav {
-        svg:not(.img-logo) {
-            width: 1.2rem !important;
-        }
+    header nav svg:not(.img-logo) {
+        width: 1.2rem;
+    }
 
-        .img-logo {
-            width: 3rem !important;
-            top: 1.2rem;
-        }
+    header .img-logo {
+        width: 3rem;
+        top: 1.2rem;
+    }
 
-        #twitter-id{
-            width: 1.8rem !important;
-        }
-        
+    #twitter-id {
+        width: 1.8rem;
     }
 }

@@ -408,39 +408,35 @@ header .link-opensea > .opensea-svg path {
   fill: #1868b7;
 }
 
-.link-mail:hover > .mail-svg path {
-  fill: #f2a60c;
-}
-
 @media screen and (max-width: 450px) {
   header nav .container-fluid {
-    padding: 0.5rem 1rem !important;
+    padding: 0.5rem 1rem;
   }
   header nav svg:not(.img-logo) {
     width: 1.5rem;
   }
-  header nav .twitter-svg {
-    width: 2rem !important;
-  }
-  header nav .img-logo {
+  header .img-logo {
     width: 4rem;
+  }
+  header .twitter-svg {
+    width: 2rem;
   }
 }
 @media screen and (max-width: 376px) {
-  nav svg:not(.img-logo) {
-    width: 1.2rem !important;
+  header nav svg:not(.img-logo) {
+    width: 1.2rem;
   }
-  nav .img-logo {
-    width: 3rem !important;
+  header .img-logo {
+    width: 3rem;
     top: 1.2rem;
   }
-  nav #twitter-id {
-    width: 1.8rem !important;
+  #twitter-id {
+    width: 1.8rem;
   }
 }
 body {
   background-color: #07070f;
-  background-image: url(../Pictures/stars-background-main.svg);
+  background-image: url(../assets/svg/stars-background-main.svg);
 }
 body img {
   pointer-events: none;
@@ -870,6 +866,9 @@ footer .copy-terms a {
   margin: 1rem;
   transition: all 0.2 ease-in-out;
 }
+footer .link-mail:hover > .mail-svg path {
+  fill: #f2a60c;
+}
 
 .copy-terms a:hover {
   color: #921174;
@@ -890,7 +889,7 @@ footer .copy-terms a {
   }
 }
 .body-tyc {
-  background-image: url(../Pictures/background-stars-tyc.svg);
+  background-image: url(../assets/svg/background-stars-tyc.svg);
 }
 
 .tyc-main .container-fluid {

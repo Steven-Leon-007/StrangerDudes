@@ -1,6 +1,6 @@
 body {
     background-color: #07070f;
-    background-image: url(../Pictures/stars-background-main.svg);
+    background-image: url(../assets/svg/stars-background-main.svg);
 
     img {
         pointer-events: none;
@@ -111,7 +111,6 @@ main {
         .sell-button {
             width: 90%;
             padding: 3rem;
-
             margin: 1rem auto;
             float: right;
             background-color: #464748;
@@ -141,8 +140,8 @@ main {
         }
     }
 
-    #countdown{
-        font-family: 'Gilbert-Bold-Preview4', Gilbert;
+    #countdown {
+        font-family: "Gilbert-Bold-Preview4", Gilbert;
         text-align: center;
         font-size: 1.8rem;
     }
@@ -262,7 +261,7 @@ main {
         margin-bottom: 0 !important;
     }
 
-    #countdown{
+    #countdown {
         text-align: center !important;
         font-size: 1.8rem !important;
     }
@@ -414,7 +413,7 @@ main {
         font-size: 3rem !important;
     }
 
-    #countdown{
+    #countdown {
         font-size: 1.4rem !important;
     }
 }
@@ -442,7 +441,7 @@ main {
         width: 1.2rem !important;
     }
 
-    #twitter-id{
+    #twitter-id {
         width: 1.5rem !important;
     }
 
