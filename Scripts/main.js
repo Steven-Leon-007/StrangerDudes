@@ -98,3 +98,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	merchSlides();
 });
+
+// Seleccionar todos los elementos de texto dentro del grupo
+const textElements = document.querySelectorAll('#Layer_5 text');
+
+// Iterar sobre cada elemento de texto
+textElements.forEach((text, index) => {
+	// Asignar un color diferente a cada elemento de texto
+	text.addEventListener("mouseover", () => {
+		text.style.fill = `hsl(${index * (360 / textElements.length)}, 70%, 50%)`;
+	})
+
+	text.addEventListener("mouseout", () => {
+        // Volver al color original después de 2 segundos (2000 milisegundos)
+        setTimeout(() => {
+            text.style.fill = "#fff";
+        }, 2000); // Cambiar este valor según el tiempo deseado
+    });
+});

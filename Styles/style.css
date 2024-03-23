@@ -313,13 +313,15 @@ body {
 }
 
 h1 {
-  font-family: "Gilbert-Bold-Preview4", Gilbert;
+  font-family: "gilbert", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 4rem;
   color: #fff;
 }
 
 h2 {
-  font-family: "Gilbert-Bold-Preview4", Gilbert;
+  font-family: "gilbert", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 3.5rem;
@@ -327,7 +329,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Gilbert-Bold-Preview4", Gilbert;
+  font-family: "gilbert", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 2rem;
@@ -356,7 +358,7 @@ a {
 }
 
 button {
-  font-family: "Gilbert-Bold-Preview4", Gilbert;
+  font-family: "gilbert", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -818,7 +820,7 @@ main .designer-information p {
     width: 6rem !important;
   }
   .footer-links svg {
-    width: 1.2rem !important;
+    width: 1rem !important;
   }
   #twitter-id {
     width: 1.5rem !important;
@@ -876,7 +878,7 @@ footer .link-mail:hover > .mail-svg path {
 
 @media screen and (max-width: 890px) {
   .footer-links {
-    width: 90% !important;
+    width: 100% !important;
   }
   .copy-terms {
     flex-direction: column;
@@ -886,6 +888,11 @@ footer .link-mail:hover > .mail-svg path {
   .copy-terms a {
     font-size: 0.75rem !important;
     margin: 1rem 0.5rem !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  #twitter-id-footer {
+    width: 1.8rem !important;
   }
 }
 .body-tyc {
@@ -954,10 +961,4 @@ footer .link-mail:hover > .mail-svg path {
   .tyc-main li {
     font-size: 1.1rem;
   }
-}
-@font-face {
-  font-family: "Gilbert-Bold-Preview4";
-  src: url("../Fonts/Gilbert-Bold-Preview4.ttf.woff") format("woff"), url("../Fonts/Gilbert-Bold-Preview4.ttf.svg#Gilbert-Bold-Preview4") format("svg"), url("../Fonts/Gilbert-Bold-Preview4.ttf.eot"), url("../Fonts/Gilbert-Bold-Preview4.ttf.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
 }/*# sourceMappingURL=style.css.map */

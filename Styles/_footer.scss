@@ -37,6 +37,7 @@ footer {
         gap: 0px;
     }
 
+
     .copy-terms {
         .copyright-text,
         a {
@@ -60,7 +61,7 @@ footer {
 
 @media screen and (max-width: 890px) {
     .footer-links {
-        width: 90% !important;
+        width: 100% !important;
     }
     .copy-terms {
         flex-direction: column;
@@ -70,5 +71,12 @@ footer {
             font-size: 0.75rem !important; 
             margin: 1rem 0.5rem !important;
         }
+    }
+}
+
+@media screen and (max-width: 320px){
+    
+    #twitter-id-footer{
+        width: 1.8rem !important;
     }
 }
