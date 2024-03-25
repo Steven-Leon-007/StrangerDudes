@@ -121,6 +121,16 @@ main {
             font-size: 2rem;
             font-weight: 700;
         }
+
+        .button-wrapper {
+            position: relative;
+            display: inline-block; 
+            width: 100%;
+        }
+
+        .tick_disappear {
+            opacity: 0;
+        }
     }
 
     .titles-change {

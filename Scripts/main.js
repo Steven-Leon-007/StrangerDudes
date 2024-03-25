@@ -20,15 +20,15 @@ window.addEventListener('scroll', scrollToAppear);
 
 
 const pictures = [
-	'../assets/Stranger-Dude-1.png',
-	'../assets/Stranger-Dude-2.png',
-	'../assets/Stranger-Dude-3.png',
-	'../assets/Stranger-Dude-4.png',
-	'../assets/Stranger-Dude-5.png',
-	'../assets/Stranger-Dude-6.png',
-	'../assets/Stranger-Dude-7.png',
-	'../assets/Stranger-Dude-8.png',
-	'../assets/Stranger-Dude-9.png',
+	'../assets/images/Stranger-Dude-1.webp',
+	'../assets/images/Stranger-Dude-2.webp',
+	'../assets/images/Stranger-Dude-3.webp',
+	'../assets/images/Stranger-Dude-4.webp',
+	'../assets/images/Stranger-Dude-5.webp',
+	'../assets/images/Stranger-Dude-6.webp',
+	'../assets/images/Stranger-Dude-7.webp',
+	'../assets/images/Stranger-Dude-8.webp',
+	'../assets/images/Stranger-Dude-9.webp',
 ];
 
 let currentIndex = 0;
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		// Precargar imágenes
 		const imagePromises = Array.from({ length: 22 }, (_, index) => {
 			const img = new Image();
-			img.src = `../assets/merch-slides/stranger-dudes-merch-${index + 1}.png`;
+			img.src = `../assets/merch-slides/stranger-dudes-merch-${index + 1}.webp`;
 			return new Promise((resolve) => {
 				img.onload = resolve;
 			});
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		await Promise.all(imagePromises);
 
 		function changeImages() {
-			sdBrand.src = `../assets/merch-slides/stranger-dudes-merch-${counter}.png`;
+			sdBrand.src = `../assets/merch-slides/stranger-dudes-merch-${counter}.webp`;
 
 			counter++;
 			if (counter > 22) {
@@ -99,10 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	merchSlides();
 });
 
-// Seleccionar todos los elementos de texto dentro del grupo
 const textElements = document.querySelectorAll('#Layer_5 text');
 
-// Iterar sobre cada elemento de texto
 textElements.forEach((text, index) => {
 	// Asignar un color diferente a cada elemento de texto
 	text.addEventListener("mouseover", () => {
@@ -110,9 +108,8 @@ textElements.forEach((text, index) => {
 	})
 
 	text.addEventListener("mouseout", () => {
-        // Volver al color original después de 2 segundos (2000 milisegundos)
         setTimeout(() => {
             text.style.fill = "#fff";
-        }, 2000); // Cambiar este valor según el tiempo deseado
+        }, 2000); 
     });
 });

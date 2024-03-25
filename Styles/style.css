@@ -547,6 +547,14 @@ main .society-explaniated .sell-button {
   font-size: 2rem;
   font-weight: 700;
 }
+main .society-explaniated .button-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+main .society-explaniated .tick_disappear {
+  opacity: 0;
+}
 main .titles-change {
   font-size: 2.8rem;
 }
