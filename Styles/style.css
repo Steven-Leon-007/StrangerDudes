@@ -642,6 +642,10 @@ main .designer-information p {
   color: rgb(211, 167, 23);
 }
 
+.visit-terms {
+  font-size: 0.7rem;
+}
+
 .road-map-link:hover {
   color: #98e1e5;
 }
@@ -911,7 +915,8 @@ footer .link-mail:hover > .mail-svg path {
   width: 60%;
   margin-bottom: 4.8rem;
 }
-.tyc-main p, .tyc-main li {
+.tyc-main p,
+.tyc-main li {
   font-size: 1.4rem;
   text-align: justify;
 }
@@ -940,7 +945,8 @@ footer .link-mail:hover > .mail-svg path {
   main h3 {
     font-size: 1.5rem;
   }
-  main p, main li {
+  main p,
+  main li {
     font-size: 1.3rem;
   }
   main ul {

@@ -1,78 +1,77 @@
-.body-tyc{
+.body-tyc {
     background-image: url(../assets/svg/background-stars-tyc.svg);
 }
 
-.tyc-main{
-    .container-fluid{
+.tyc-main {
+    .container-fluid {
         width: 60%;
         margin-bottom: 4.8rem;
     }
 
-    p,li{
+    p,
+    li {
         font-size: 1.4rem;
         text-align: justify;
     }
 
-    li{
+    li {
         list-style: disc;
         margin: 1.5rem auto;
     }
 
-    .last-update-sign{
+    .last-update-sign {
         display: inline-block;
         transition: all 0.2s ease-in-out;
         margin-bottom: 2.5rem;
     }
-
 }
 
-
-.img-logo-tyc{
+.img-logo-tyc {
     width: 6rem;
 }
 
-.last-update-sign:hover{
+.last-update-sign:hover {
     color: #234ea4;
 }
 
-@media screen and (max-width:953px){
-    main{
-        h1{
+@media screen and (max-width: 953px) {
+    main {
+        h1 {
             font-size: 3rem;
         }
-        h3{
+        h3 {
             font-size: 1.5rem;
         }
-        p,li{
+        p,
+        li {
             font-size: 1.3rem;
         }
-        ul{
+        ul {
             padding-left: 1rem;
         }
     }
 }
 
-@media screen and (max-width: 570px){
-    .tyc-main{
-
-        .container-fluid{
+@media screen and (max-width: 570px) {
+    .tyc-main {
+        .container-fluid {
             width: 80%;
         }
-        h1{
+        h1 {
             font-size: 1.8rem;
             margin-top: 3rem;
             text-align: center;
         }
-        h3{
+        h3 {
             font-size: 1.3rem;
             text-align: center;
         }
-        p{
+        p {
             text-align: justify;
             font-size: 1.1rem;
             text-align-last: center;
         }
-        li{
+        li {
             font-size: 1.1rem;
         }
     }
