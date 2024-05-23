@@ -646,6 +646,10 @@ main .designer-information p {
   font-size: 0.7rem;
 }
 
+.TC-link {
+  font-size: 0.9rem;
+}
+
 .road-map-link:hover {
   color: #98e1e5;
 }
