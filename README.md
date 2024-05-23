@@ -1,7 +1,7 @@
 # StrangerDudes 
 ### The repository of the NFT project website
 
-Welcome to the repository of Stranger Dudes, a 10000 NFT art collection builded on the Etherium Network  
+Welcome to the repository of Stranger Dudes, a 10000 NFT art collection builded on the Ethereum Network  
 Join to the project and start to being a Stranger -> [strangerdudes.com](https://strangerdudes.com)  
 <br>
 This website was developed with ❤️ by me, but I'm not the owner of the project and every credit about  
