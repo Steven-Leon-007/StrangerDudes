@@ -24,6 +24,7 @@ header {
     svg,
     .link-instagram > .instagram-svg path,
     .link-discord > .discord-svg path,
+    .link-mail > .mail-svg path,
     .link-opensea > .opensea-svg path {
         transition: all 0.2s ease-in-out;
     }
@@ -43,6 +44,14 @@ header {
 
 .link-opensea:hover > .opensea-svg path {
     fill: #1868b7;
+}
+
+.link-mail:hover > .mail-svg path {
+    fill: #f2a60c;
+}
+
+.link-mail {
+    cursor: pointer;
 }
 
 

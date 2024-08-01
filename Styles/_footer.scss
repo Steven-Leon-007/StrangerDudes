@@ -1,11 +1,10 @@
 footer {
-
     .footer-content {
         padding: 1.3rem;
         align-items: center;
         text-align: center;
 
-        .col-12{
+        .col-12 {
             margin-bottom: 1rem;
         }
     }
@@ -17,18 +16,22 @@ footer {
 
     .img-logo {
         width: 8rem;
-        margin: .5rem auto 0;
+        margin: 0.5rem auto 0;
     }
 
-    .logo-footer{
+    .logo-footer {
         margin: 0 auto;
     }
     svg,
     .link-instagram > .instagram-svg path,
     .link-discord > .discord-svg path,
     .link-opensea > .opensea-svg path,
-    .link-mail > .mail-svg path{
+    .link-mail > .mail-svg path {
         transition: all 0.2s ease-in-out;
+    }
+
+    .link-mail {
+        cursor: pointer;
     }
 
     .footer-links {
@@ -36,7 +39,6 @@ footer {
         width: 40%;
         gap: 0px;
     }
-
 
     .copy-terms {
         .copyright-text,
@@ -53,11 +55,9 @@ footer {
     }
 }
 
-.copy-terms a:hover{
+.copy-terms a:hover {
     color: #921174;
 }
-
-
 
 @media screen and (max-width: 890px) {
     .footer-links {
@@ -68,15 +68,14 @@ footer {
         align-items: center;
         p,
         a {
-            font-size: 0.75rem !important; 
+            font-size: 0.75rem !important;
             margin: 1rem 0.5rem !important;
         }
     }
 }
 
-@media screen and (max-width: 320px){
-    
-    #twitter-id-footer{
+@media screen and (max-width: 320px) {
+    #twitter-id-footer {
         width: 1.8rem !important;
     }
 }
