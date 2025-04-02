@@ -442,9 +442,6 @@ header .link-opensea > .opensea-svg path {
     width: 3rem;
     top: 1.2rem;
   }
-  #twitter-id {
-    width: 1.8rem;
-  }
 }
 body {
   background-color: #07070f;
@@ -868,9 +865,6 @@ main .designer-information p {
   }
   .footer-links svg {
     width: 1rem !important;
-  }
-  #twitter-id {
-    width: 1.5rem !important;
   }
   .copy-terms .copyright-text,
   .copy-terms a {
